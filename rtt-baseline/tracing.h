@@ -9,6 +9,7 @@
 #include "sim-config.h"
 #include "topology.h"
 #include "traffic.h"
+#include "tcp-rtt-trend.h"
 
 #include "ns3/core-module.h"
 #include "ns3/internet-module.h"
@@ -41,9 +42,17 @@ class BaselineTracer
     void OnCwnd(std::string context, uint32_t oldV, uint32_t newV);
     void OnSsthresh(std::string context, uint32_t oldV, uint32_t newV);
     void OnRtt(std::string context, ns3::Time oldV, ns3::Time newV);
+    void OnTx(std::string context,
+              ns3::Ptr<const ns3::Packet> packet,
+              const ns3::TcpHeader& header,
+              ns3::Ptr<const ns3::TcpSocketBase> socket);
     void OnCongState(std::string context,
                      ns3::TcpSocketState::TcpCongState_t oldV,
                      ns3::TcpSocketState::TcpCongState_t newV);
+
+    // ---- PART 2: TcpRttTrend internal state ----
+    void OnTrendRecord(const ns3::TcpRttTrend::Record& r);
+    void OnTrendTransition(const ns3::TcpRttTrend::Transition& t);
 
     // ---- bottleneck queue trace sinks ----
     void OnQueuePackets(uint32_t oldV, uint32_t newV);
@@ -57,6 +66,8 @@ class BaselineTracer
     std::map<uint32_t, uint32_t> m_nodeToFlow; // sender node id -> flow index
     std::vector<uint64_t> m_lastRxBytes;       // per flow, for throughput deltas
     uint64_t m_dropCount;
+    std::vector<ns3::SequenceNumber32> m_highestSent; // per flow: end of highest data sent
+    std::vector<uint64_t> m_retxCount;                // per flow: retransmitted data segments
 
     std::ofstream m_cwndFile;
     std::ofstream m_ssthreshFile;
@@ -66,6 +77,9 @@ class BaselineTracer
     std::ofstream m_sojournFile;
     std::ofstream m_dropFile;
     std::ofstream m_tputFile;
+    std::ofstream m_trendFile;
+    std::ofstream m_eventFile;
+    std::ofstream m_retxFile;
 };
 
 #endif // TRACING_H

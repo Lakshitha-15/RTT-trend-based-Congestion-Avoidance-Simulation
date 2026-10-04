@@ -13,7 +13,9 @@ BaselineTracer::BaselineTracer(const SimConfig& cfg,
       m_topo(topo),
       m_traffic(traffic),
       m_lastRxBytes(cfg.nFlows, 0),
-      m_dropCount(0)
+      m_dropCount(0),
+      m_highestSent(cfg.nFlows, ns3::SequenceNumber32(0)),
+      m_retxCount(cfg.nFlows, 0)
 {
     for (uint32_t i = 0; i < cfg.nFlows; ++i)
     {
@@ -27,6 +29,15 @@ BaselineTracer::BaselineTracer(const SimConfig& cfg,
     OpenCsv(m_sojournFile, "queue_delay.csv", "time_s,sojourn_ms");
     OpenCsv(m_dropFile, "drops.csv", "time_s,size_bytes,cumulative_drops");
     OpenCsv(m_tputFile, "throughput.csv", "time_s,flow,goodput_mbps");
+    // PART 2 files (header-only for baseline runs, so analysis code can read them uniformly)
+    OpenCsv(m_trendFile,
+            "rtt_trend.csv",
+            "time_s,flow,rtt_in_ms,smoothed_ms,base_rtt_ms,queue_delay_est_ms,slope_ms_per_s,"
+            "state,cwnd_bytes,ssthresh_bytes");
+    OpenCsv(m_eventFile,
+            "rtt_trend_events.csv",
+            "time_s,flow,old_state,new_state,reason,slope_ms_per_s,queue_delay_est_ms");
+    OpenCsv(m_retxFile, "retransmissions.csv", "time_s,flow,seq,size_bytes");
 }
 
 void
@@ -49,6 +60,11 @@ BaselineTracer::Install()
     q->TraceConnectWithoutContext("SojournTime",
                                   MakeCallback(&BaselineTracer::OnQueueSojourn, this));
     q->TraceConnectWithoutContext("Drop", MakeCallback(&BaselineTracer::OnQueueDrop, this));
+
+    // PART 2: receive the internal state of every TcpRttTrend instance (no-op for other variants).
+    TcpRttTrend::SetRecordSink([this](const TcpRttTrend::Record& r) { OnTrendRecord(r); });
+    TcpRttTrend::SetTransitionSink(
+        [this](const TcpRttTrend::Transition& t) { OnTrendTransition(t); });
 
     // TCP sockets do not exist until the application starts, so connect shortly afterwards.
     for (uint32_t i = 0; i < m_cfg.nFlows; ++i)
@@ -78,6 +94,7 @@ BaselineTracer::ConnectSenderTraces(uint32_t flow)
     Config::Connect(base + "SlowStartThreshold", MakeCallback(&BaselineTracer::OnSsthresh, this));
     Config::Connect(base + "RTT", MakeCallback(&BaselineTracer::OnRtt, this));
     Config::Connect(base + "CongState", MakeCallback(&BaselineTracer::OnCongState, this));
+    Config::Connect(base + "Tx", MakeCallback(&BaselineTracer::OnTx, this));
 }
 
 uint32_t
@@ -123,6 +140,59 @@ BaselineTracer::OnCongState(std::string context,
     m_stateFile << Simulator::Now().GetSeconds() << "," << FlowFromContext(context) << ","
                 << TcpSocketState::TcpCongStateName[oldV] << ","
                 << TcpSocketState::TcpCongStateName[newV] << "\n";
+}
+
+// Every segment the sender hands to IP passes here. A DATA segment whose first sequence number
+// is below the highest sequence already sent carries bytes sent before = a retransmission.
+void
+BaselineTracer::OnTx(std::string context,
+                     Ptr<const Packet> packet,
+                     const TcpHeader& header,
+                     Ptr<const TcpSocketBase>)
+{
+    if (packet->GetSize() == 0)
+    {
+        return; // SYN / pure ACK / FIN without data
+    }
+    const uint32_t flow = FlowFromContext(context);
+    const SequenceNumber32 seq = header.GetSequenceNumber();
+    if (seq < m_highestSent[flow])
+    {
+        ++m_retxCount[flow];
+        m_retxFile << Simulator::Now().GetSeconds() << "," << flow << "," << seq.GetValue() << ","
+                   << packet->GetSize() << "\n";
+    }
+    else
+    {
+        m_highestSent[flow] = seq + packet->GetSize();
+    }
+}
+
+void
+BaselineTracer::OnTrendRecord(const TcpRttTrend::Record& r)
+{
+    auto it = m_nodeToFlow.find(r.nodeId);
+    if (it == m_nodeToFlow.end())
+    {
+        return; // not a sender node (e.g. a receiver-side forked socket)
+    }
+    m_trendFile << r.timeS << "," << it->second << "," << r.rttInMs << "," << r.smoothedMs << ","
+                << r.baseRttMs << "," << r.queueDelayMs << "," << r.slopeMsPerS << ","
+                << TcpRttTrend::StateName(r.state) << "," << r.cwndBytes << "," << r.ssthreshBytes
+                << "\n";
+}
+
+void
+BaselineTracer::OnTrendTransition(const TcpRttTrend::Transition& t)
+{
+    auto it = m_nodeToFlow.find(t.nodeId);
+    if (it == m_nodeToFlow.end())
+    {
+        return;
+    }
+    m_eventFile << t.timeS << "," << it->second << "," << TcpRttTrend::StateName(t.oldState) << ","
+                << TcpRttTrend::StateName(t.newState) << "," << t.reason << "," << t.slopeMsPerS
+                << "," << t.queueDelayMs << "\n";
 }
 
 void
@@ -192,6 +262,19 @@ BaselineTracer::Finalize()
     s << "param.appRate," << m_cfg.appRate << "\n";
     s << "param.segmentSize," << m_cfg.segmentSize << "\n";
     s << "param.throughputInterval," << m_cfg.throughputInterval << "\n";
+    s << "param.rttWindow," << m_cfg.rttWindow << "\n";
+    s << "param.rttAlpha," << m_cfg.rttAlpha << "\n";
+    s << "param.slopeEnter," << m_cfg.slopeEnter << "\n";
+    s << "param.slopeExit," << m_cfg.slopeExit << "\n";
+    s << "param.persistTime," << m_cfg.persistTime << "\n";
+    s << "param.minQueueDelayMs," << m_cfg.minQueueDelayMs << "\n";
+    s << "param.congDelayMs," << m_cfg.congDelayMs << "\n";
+    s << "param.exitFraction," << m_cfg.exitFraction << "\n";
+    s << "param.growthReduction," << m_cfg.growthReduction << "\n";
+    s << "param.congestedDecrease," << m_cfg.congestedDecrease << "\n";
+    s << "param.decreaseIntervalRtts," << m_cfg.decreaseIntervalRtts << "\n";
+    s << "param.minCwndSegs," << m_cfg.minCwndSegs << "\n";
+    s << "param.maxCwndSegs," << m_cfg.maxCwndSegs << "\n";
 
     // bottleneck queue (data direction) statistics
     s << "bottleneck.received_packets," << st.nTotalReceivedPackets << "\n";
@@ -199,6 +282,13 @@ BaselineTracer::Finalize()
     s << "bottleneck.dropped_packets," << st.nTotalDroppedPackets << "\n";
     s << "bottleneck.drop_rate_percent," << dropPct << "\n";
     s << "trace.drop_events_logged," << m_dropCount << "\n";
+
+    uint64_t retxTotal = 0;
+    for (uint64_t r : m_retxCount)
+    {
+        retxTotal += r;
+    }
+    s << "trace.retransmitted_segments," << retxTotal << "\n";
 
     // per-flow results
     for (uint32_t i = 0; i < m_cfg.nFlows; ++i)
@@ -208,9 +298,16 @@ BaselineTracer::Finalize()
         const double active = m_cfg.simTime - m_traffic.startTimes[i];
         s << "flow" << i << ".start_time_s," << m_traffic.startTimes[i] << "\n";
         s << "flow" << i << ".bytes_received," << bytes << "\n";
+        s << "flow" << i << ".retransmitted_segments," << m_retxCount[i] << "\n";
         s << "flow" << i << ".avg_goodput_mbps," << (bytes * 8.0) / active / 1e6 << "\n";
     }
 
+    TcpRttTrend::SetRecordSink(nullptr); // do not leave callbacks pointing at this object
+    TcpRttTrend::SetTransitionSink(nullptr);
+
+    m_trendFile.close();
+    m_eventFile.close();
+    m_retxFile.close();
     m_cwndFile.close();
     m_ssthreshFile.close();
     m_rttFile.close();

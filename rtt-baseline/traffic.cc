@@ -1,5 +1,7 @@
 #include "traffic.h"
 
+#include "tcp-rtt-trend.h"
+
 #include "ns3/internet-module.h"
 #include "ns3/network-module.h"
 
@@ -13,6 +15,24 @@ ConfigureTcpDefaults(const SimConfig& cfg)
     NS_ABORT_MSG_UNLESS(TypeId::LookupByNameFailSafe(typeName, &tid),
                         "Unknown TCP variant '" << typeName
                                                 << "'. Try TcpNewReno, TcpLinuxReno, TcpCubic, TcpVegas, TcpBbr...");
+
+    // PART 2: make sure the custom TypeId is registered (also forces the linker to keep it),
+    // then push the algorithm parameters into its attribute defaults. Harmless for other variants.
+    TcpRttTrend::GetTypeId();
+    Config::SetDefault("ns3::TcpRttTrend::WindowSize", UintegerValue(cfg.rttWindow));
+    Config::SetDefault("ns3::TcpRttTrend::EwmaAlpha", DoubleValue(cfg.rttAlpha));
+    Config::SetDefault("ns3::TcpRttTrend::SlopeEnter", DoubleValue(cfg.slopeEnter));
+    Config::SetDefault("ns3::TcpRttTrend::SlopeExit", DoubleValue(cfg.slopeExit));
+    Config::SetDefault("ns3::TcpRttTrend::PersistTime", TimeValue(Seconds(cfg.persistTime)));
+    Config::SetDefault("ns3::TcpRttTrend::MinQueueDelayMs", DoubleValue(cfg.minQueueDelayMs));
+    Config::SetDefault("ns3::TcpRttTrend::CongDelayMs", DoubleValue(cfg.congDelayMs));
+    Config::SetDefault("ns3::TcpRttTrend::ExitFraction", DoubleValue(cfg.exitFraction));
+    Config::SetDefault("ns3::TcpRttTrend::GrowthReduction", DoubleValue(cfg.growthReduction));
+    Config::SetDefault("ns3::TcpRttTrend::CongestedDecrease", DoubleValue(cfg.congestedDecrease));
+    Config::SetDefault("ns3::TcpRttTrend::DecreaseIntervalRtts",
+                       DoubleValue(cfg.decreaseIntervalRtts));
+    Config::SetDefault("ns3::TcpRttTrend::MinCwndSegments", UintegerValue(cfg.minCwndSegs));
+    Config::SetDefault("ns3::TcpRttTrend::MaxCwndSegments", UintegerValue(cfg.maxCwndSegs));
 
     // Congestion-control algorithm used by every TCP socket created afterwards.
     Config::SetDefault("ns3::TcpL4Protocol::SocketType", StringValue(typeName));
