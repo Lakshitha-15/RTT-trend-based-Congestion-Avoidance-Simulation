@@ -1,0 +1,6 @@
+build/
+cmake-cache/
+results/
+*.pyc
+__pycache__/
+*.Zone.Identifier
