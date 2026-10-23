@@ -1,0 +1,124 @@
+{
+  "name": "main",
+  "type": "comparison",
+  "runs": 5,
+  "warmup": 10,
+  "common": {
+    "simTime": 60,
+    "seed": 1,
+    "bottleneckBw": "10Mbps",
+    "bottleneckDelay": "20ms",
+    "accessBw": "100Mbps",
+    "accessDelay": "2ms",
+    "queuePackets": 100,
+    "nFlows": 2,
+    "appRate": "50Mbps",
+    "segmentSize": 1448,
+    "appStart": 1.0,
+    "flowStagger": 1.0,
+    "startJitter": 1.0
+  },
+  "algorithms": {
+    "baseline": {
+      "description": "Baseline: ns-3 TcpNewReno (loss-based AIMD).",
+      "tcpVariant": "TcpNewReno"
+    },
+    "proposed": {
+      "description": "Proposed: TcpRttTrend with default parameters.",
+      "tcpVariant": "TcpRttTrend"
+    },
+    "noslope": {
+      "description": "Ablation: TcpRttTrend with the slope trigger disabled (queueing-delay threshold only).",
+      "tcpVariant": "TcpRttTrend",
+      "slopeEnter": 100000
+    },
+    "monitor": {
+      "description": "Monitor-only: TcpRttTrend detector running but with NO response; trajectory identical to the baseline, used to measure detection lead time.",
+      "tcpVariant": "TcpRttTrend",
+      "growthReduction": 0,
+      "congestedDecrease": 0
+    }
+  },
+  "scenarios": {
+    "S01_light": {
+      "category": "traffic load",
+      "description": "Light load: 1 flow, application-limited to 4 Mbit/s (40% of the bottleneck). No congestion should occur; any early-congestion alarm is a false positive.",
+      "params": {
+        "nFlows": 1,
+        "appRate": "4Mbps"
+      }
+    },
+    "S02_moderate": {
+      "category": "traffic load",
+      "description": "Moderate load: 2 flows x 4.5 Mbit/s = 9 Mbit/s offered (about 93% of payload capacity).",
+      "params": {
+        "nFlows": 2,
+        "appRate": "4.5Mbps"
+      }
+    },
+    "S03_heavy": {
+      "category": "traffic load",
+      "description": "Heavy load: 4 saturating flows (each wants 50 Mbit/s).",
+      "params": {
+        "nFlows": 4
+      }
+    },
+    "S04_ramp": {
+      "category": "traffic load",
+      "description": "Rapidly increasing load: 6 flows of 3 Mbit/s start 4 s apart, so the offered load rises 3, 6, 9, ... 18 Mbit/s.",
+      "params": {
+        "nFlows": 6,
+        "appRate": "3Mbps",
+        "flowStagger": 4.0
+      },
+      "warmup": 5
+    },
+    "S05_reference": {
+      "category": "reference",
+      "description": "Reference: 2 saturating flows, 10 Mbit/s bottleneck, 20 ms delay, 100-packet queue. The capacity, buffer and delay scenarios change exactly one of these.",
+      "params": {}
+    },
+    "S06_capacity5": {
+      "category": "bottleneck capacity",
+      "description": "Bottleneck capacity 5 Mbit/s (reference otherwise).",
+      "params": {
+        "bottleneckBw": "5Mbps"
+      }
+    },
+    "S07_capacity20": {
+      "category": "bottleneck capacity",
+      "description": "Bottleneck capacity 20 Mbit/s (reference otherwise).",
+      "params": {
+        "bottleneckBw": "20Mbps"
+      }
+    },
+    "S08_queue25": {
+      "category": "queue size",
+      "description": "Small buffer: 25 packets (reference otherwise).",
+      "params": {
+        "queuePackets": 25
+      }
+    },
+    "S09_queue400": {
+      "category": "queue size",
+      "description": "Large buffer: 400 packets (reference otherwise).",
+      "params": {
+        "queuePackets": 400
+      }
+    },
+    "S10_delay5": {
+      "category": "propagation delay",
+      "description": "Short path: bottleneck delay 5 ms, propagation RTT 18 ms (reference otherwise).",
+      "params": {
+        "bottleneckDelay": "5ms"
+      }
+    },
+    "S11_delay50": {
+      "category": "propagation delay",
+      "description": "Long path: bottleneck delay 50 ms, propagation RTT 108 ms (reference otherwise).",
+      "params": {
+        "bottleneckDelay": "50ms"
+      }
+    }
+  }
+}

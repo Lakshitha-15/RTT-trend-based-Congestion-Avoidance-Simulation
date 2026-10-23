@@ -1,0 +1,661 @@
+scenario,comparison,metric,baseline_mean,proposed_mean,diff_mean,ci95_lo,ci95_hi,rel_change_pct,n_pairs,verdict
+S01_light,proposed-baseline,rtt_mean_ms,52.39037800380886,52.39037800380886,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-baseline,rtt_median_ms,52.393404200000006,52.393404200000006,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-baseline,rtt_p95_ms,52.484115599999996,52.484115599999996,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-baseline,rtt_max_ms,52.5171966,52.5171966,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-baseline,qdelay_mean_ms,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-baseline,qdelay_p95_ms,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-baseline,rtt_slope_abs_mean,0.0054808118540277204,0.0054808118540277204,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-baseline,goodput_mbps,4.0000318076152315,4.0000318076152315,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-baseline,utilization_pct,41.43679358717435,41.43679358717435,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-baseline,loss_rate_pct,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-baseline,drops_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-baseline,drops_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-baseline,retx_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-baseline,retx_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-baseline,loss_events_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-baseline,cwnd_mean_segs,5750.984769120001,5750.984769120001,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-baseline,cwnd_max_segs,10067.2,10067.2,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-baseline,queue_mean_pkts,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-baseline,queue_p95_pkts,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-baseline,fairness_jain,1.0,1.0,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,noslope-baseline,rtt_mean_ms,52.39037800380886,52.39037800380886,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,noslope-baseline,rtt_median_ms,52.393404200000006,52.393404200000006,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,noslope-baseline,rtt_p95_ms,52.484115599999996,52.484115599999996,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,noslope-baseline,rtt_max_ms,52.5171966,52.5171966,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,noslope-baseline,qdelay_mean_ms,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,noslope-baseline,qdelay_p95_ms,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,noslope-baseline,rtt_slope_abs_mean,0.0054808118540277204,0.0054808118540277204,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,noslope-baseline,goodput_mbps,4.0000318076152315,4.0000318076152315,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,noslope-baseline,utilization_pct,41.43679358717435,41.43679358717435,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,noslope-baseline,loss_rate_pct,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,noslope-baseline,drops_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,noslope-baseline,drops_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,noslope-baseline,retx_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,noslope-baseline,retx_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,noslope-baseline,loss_events_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,noslope-baseline,cwnd_mean_segs,5750.984769120001,5750.984769120001,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,noslope-baseline,cwnd_max_segs,10067.2,10067.2,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,noslope-baseline,queue_mean_pkts,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,noslope-baseline,queue_p95_pkts,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,noslope-baseline,fairness_jain,1.0,1.0,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-noslope,rtt_mean_ms,52.39037800380886,52.39037800380886,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-noslope,rtt_median_ms,52.393404200000006,52.393404200000006,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-noslope,rtt_p95_ms,52.484115599999996,52.484115599999996,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-noslope,rtt_max_ms,52.5171966,52.5171966,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-noslope,qdelay_mean_ms,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-noslope,qdelay_p95_ms,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-noslope,rtt_slope_abs_mean,0.0054808118540277204,0.0054808118540277204,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-noslope,goodput_mbps,4.0000318076152315,4.0000318076152315,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-noslope,utilization_pct,41.43679358717435,41.43679358717435,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-noslope,loss_rate_pct,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-noslope,drops_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-noslope,drops_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-noslope,retx_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-noslope,retx_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-noslope,loss_events_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-noslope,cwnd_mean_segs,5750.984769120001,5750.984769120001,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-noslope,cwnd_max_segs,10067.2,10067.2,0.0,0.0,0.0,0.0,5,no clear difference
+S01_light,proposed-noslope,queue_mean_pkts,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-noslope,queue_p95_pkts,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S01_light,proposed-noslope,fairness_jain,1.0,1.0,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-baseline,rtt_mean_ms,52.201897278588,52.201897278588,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-baseline,rtt_median_ms,52.1434898,52.1434898,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-baseline,rtt_p95_ms,52.4198512,52.4198512,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-baseline,rtt_max_ms,52.4648684,52.4648684,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-baseline,qdelay_mean_ms,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-baseline,qdelay_p95_ms,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-baseline,rtt_slope_abs_mean,0.00702145272296298,0.00702145272296298,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-baseline,goodput_mbps,9.000001923847696,9.000001923847696,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-baseline,utilization_pct,93.23206412825652,93.23206412825652,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-baseline,loss_rate_pct,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-baseline,drops_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-baseline,drops_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-baseline,retx_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-baseline,retx_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-baseline,loss_events_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-baseline,cwnd_mean_segs,6434.698043302,6434.698043302,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-baseline,cwnd_max_segs,11389.2,11389.2,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-baseline,queue_mean_pkts,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-baseline,queue_p95_pkts,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-baseline,fairness_jain,0.9999999993346794,0.9999999993346794,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,noslope-baseline,rtt_mean_ms,52.201897278588,52.201897278588,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,noslope-baseline,rtt_median_ms,52.1434898,52.1434898,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,noslope-baseline,rtt_p95_ms,52.4198512,52.4198512,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,noslope-baseline,rtt_max_ms,52.4648684,52.4648684,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,noslope-baseline,qdelay_mean_ms,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,noslope-baseline,qdelay_p95_ms,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,noslope-baseline,rtt_slope_abs_mean,0.00702145272296298,0.00702145272296298,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,noslope-baseline,goodput_mbps,9.000001923847696,9.000001923847696,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,noslope-baseline,utilization_pct,93.23206412825652,93.23206412825652,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,noslope-baseline,loss_rate_pct,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,noslope-baseline,drops_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,noslope-baseline,drops_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,noslope-baseline,retx_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,noslope-baseline,retx_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,noslope-baseline,loss_events_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,noslope-baseline,cwnd_mean_segs,6434.698043302,6434.698043302,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,noslope-baseline,cwnd_max_segs,11389.2,11389.2,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,noslope-baseline,queue_mean_pkts,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,noslope-baseline,queue_p95_pkts,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,noslope-baseline,fairness_jain,0.9999999993346794,0.9999999993346794,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-noslope,rtt_mean_ms,52.201897278588,52.201897278588,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-noslope,rtt_median_ms,52.1434898,52.1434898,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-noslope,rtt_p95_ms,52.4198512,52.4198512,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-noslope,rtt_max_ms,52.4648684,52.4648684,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-noslope,qdelay_mean_ms,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-noslope,qdelay_p95_ms,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-noslope,rtt_slope_abs_mean,0.00702145272296298,0.00702145272296298,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-noslope,goodput_mbps,9.000001923847696,9.000001923847696,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-noslope,utilization_pct,93.23206412825652,93.23206412825652,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-noslope,loss_rate_pct,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-noslope,drops_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-noslope,drops_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-noslope,retx_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-noslope,retx_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-noslope,loss_events_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-noslope,cwnd_mean_segs,6434.698043302,6434.698043302,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-noslope,cwnd_max_segs,11389.2,11389.2,0.0,0.0,0.0,0.0,5,no clear difference
+S02_moderate,proposed-noslope,queue_mean_pkts,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-noslope,queue_p95_pkts,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S02_moderate,proposed-noslope,fairness_jain,0.9999999993346794,0.9999999993346794,0.0,0.0,0.0,0.0,5,no clear difference
+S03_heavy,proposed-baseline,rtt_mean_ms,150.9201627939391,139.9757750627582,-10.944387731180916,-27.122085746547,5.233310284185167,-7.251773075625411,5,no clear difference
+S03_heavy,proposed-baseline,rtt_median_ms,154.1762504,142.1974614,-11.978789000000003,-31.49534593089808,7.537767930898074,-7.769542305589761,5,no clear difference
+S03_heavy,proposed-baseline,rtt_p95_ms,175.12057185,155.31147706,-19.809094790000017,-37.07327084354931,-2.5449187364507218,-11.311689186903495,5,proposed better
+S03_heavy,proposed-baseline,rtt_max_ms,205.2046672,220.522977,15.318309799999998,-54.129597528326826,84.76621712832682,7.464893469050687,5,no clear difference
+S03_heavy,proposed-baseline,qdelay_mean_ms,95.87882687195163,86.13394162375802,-9.744885248193608,-25.538748759829247,6.048978263442031,-10.163751024204881,5,no clear difference
+S03_heavy,proposed-baseline,qdelay_p95_ms,118.70620799999999,101.114784,-17.591423999999996,-34.1587200489279,-1.0241279510720958,-14.81929571872096,5,proposed better
+S03_heavy,proposed-baseline,rtt_slope_abs_mean,19.188519630391983,7.640106363869691,-11.548413266522292,-13.221822326826675,-9.875004206217909,-60.183971921581644,5,proposed better
+S03_heavy,proposed-baseline,goodput_mbps,9.640488016032066,9.640488016032066,0.0,0.0,0.0,0.0,5,no clear difference
+S03_heavy,proposed-baseline,utilization_pct,99.86693386773548,99.86693386773548,0.0,0.0,0.0,0.0,5,no clear difference
+S03_heavy,proposed-baseline,loss_rate_pct,0.3606452,0.289734,-0.0709112,-0.11928362742291049,-0.0225387725770895,-19.662316315314882,5,proposed better
+S03_heavy,proposed-baseline,drops_total,176.4,141.6,-34.8,-58.47587891166873,-11.124121088331268,-19.727891156462583,5,proposed better
+S03_heavy,proposed-baseline,drops_window,43.8,1.0,-42.8,-47.71908453271541,-37.88091546728459,-97.71689497716896,5,proposed better
+S03_heavy,proposed-baseline,retx_total,176.0,141.6,-34.4,-58.64196736570693,-10.158032634293068,-19.545454545454547,5,proposed better
+S03_heavy,proposed-baseline,retx_window,43.4,1.0,-42.4,-47.41219849567034,-37.38780150432966,-97.69585253456222,5,proposed better
+S03_heavy,proposed-baseline,loss_events_window,32.0,0.8,-31.2,-32.23868409056845,-30.161315909431554,-97.5,5,proposed better
+S03_heavy,proposed-baseline,cwnd_mean_segs,31.531759277755526,29.10375134373964,-2.428007934015882,-5.810207318474575,0.9541914504428113,-7.700198116534368,5,no clear difference
+S03_heavy,proposed-baseline,cwnd_max_segs,82.53411602209944,110.03425414364642,27.500138121546968,2.10368054644983,52.896595696644106,33.31972213064413,5,changed (neutral metric)
+S03_heavy,proposed-baseline,queue_mean_pkts,79.81974562,71.68387024799999,-8.135875372000001,-21.289530147275073,5.017779403275071,-10.192810449099499,5,no clear difference
+S03_heavy,proposed-baseline,queue_p95_pkts,99.0,84.0,-15.0,-28.571205045978783,-1.4287949540212175,-15.151515151515152,5,proposed better
+S03_heavy,proposed-baseline,fairness_jain,0.95921006612369,0.5296022371132066,-0.4296078290104834,-0.520379566698017,-0.33883609132294973,-44.78766895624775,5,proposed worse
+S03_heavy,noslope-baseline,rtt_mean_ms,150.9201627939391,142.90379426903996,-8.016368524899146,-26.59716582866101,10.564428778862716,-5.311661726633838,5,no clear difference
+S03_heavy,noslope-baseline,rtt_median_ms,154.1762504,142.98046860000002,-11.1957818,-29.3664647177212,6.974901117721201,-7.2616773147312195,5,no clear difference
+S03_heavy,noslope-baseline,rtt_p95_ms,175.12057185,157.06336824,-18.05720361,-35.14811122585804,-0.9662959941419587,-10.311297764300898,5,noslope better
+S03_heavy,noslope-baseline,rtt_max_ms,205.2046672,218.5300714,13.325404199999998,-17.834947967464853,44.485756367464845,6.493713998723319,5,no clear difference
+S03_heavy,noslope-baseline,qdelay_mean_ms,95.87882687195163,89.34653045835312,-6.532296413598513,-24.613420637379413,11.548827810182388,-6.813075030968563,5,no clear difference
+S03_heavy,noslope-baseline,qdelay_p95_ms,118.70620799999999,102.84508799999999,-15.861119999999994,-31.2701957093702,-0.45204429062979123,-13.361660074256601,5,noslope better
+S03_heavy,noslope-baseline,rtt_slope_abs_mean,19.188519630391983,9.534405635804175,-9.654113994587807,-11.855185676517406,-7.453042312658207,-50.31192703004047,5,noslope better
+S03_heavy,noslope-baseline,goodput_mbps,9.640488016032066,9.640488016032066,0.0,0.0,0.0,0.0,5,no clear difference
+S03_heavy,noslope-baseline,utilization_pct,99.86693386773548,99.86693386773548,0.0,0.0,0.0,0.0,5,no clear difference
+S03_heavy,noslope-baseline,loss_rate_pct,0.3606452,0.2893088,-0.07133640000000001,-0.11941877908916967,-0.02325402091083035,-19.78021612376929,5,noslope better
+S03_heavy,noslope-baseline,drops_total,176.4,141.4,-35.0,-58.52240287045522,-11.477597129544783,-19.841269841269842,5,noslope better
+S03_heavy,noslope-baseline,drops_window,43.8,0.8,-43.0,-47.727357655181166,-38.272642344818834,-98.17351598173516,5,noslope better
+S03_heavy,noslope-baseline,retx_total,176.0,141.4,-34.6,-58.69849421353957,-10.501505786460434,-19.65909090909091,5,noslope better
+S03_heavy,noslope-baseline,retx_window,43.4,0.8,-42.6,-47.45601673802717,-37.743983261972836,-98.15668202764978,5,noslope better
+S03_heavy,noslope-baseline,loss_events_window,32.0,0.8,-31.2,-32.23868409056845,-30.161315909431554,-97.5,5,noslope better
+S03_heavy,noslope-baseline,cwnd_mean_segs,31.531759277755526,29.733444811995856,-1.7983144657596681,-5.629306118788545,2.0326771872692087,-5.703184684110892,5,no clear difference
+S03_heavy,noslope-baseline,cwnd_max_segs,82.53411602209944,114.99627071823204,32.46215469613259,22.399921148823054,42.52438824344213,39.33180151519462,5,changed (neutral metric)
+S03_heavy,noslope-baseline,queue_mean_pkts,79.81974562,74.3560186,-5.463727020000002,-20.517048858847296,9.58959481884729,-6.845081975093373,5,no clear difference
+S03_heavy,noslope-baseline,queue_p95_pkts,99.0,85.8,-13.2,-26.0237980271057,-0.376201972894302,-13.333333333333334,5,noslope better
+S03_heavy,noslope-baseline,fairness_jain,0.95921006612369,0.4704502281878294,-0.48875983793586053,-0.6045032685056907,-0.3730164073660303,-50.95441084256043,5,noslope worse
+S03_heavy,proposed-noslope,rtt_mean_ms,142.90379426903996,139.9757750627582,-2.928019206281769,-5.717473441361902,-0.13856497120163613,-2.048944341372273,5,proposed better
+S03_heavy,proposed-noslope,rtt_median_ms,142.98046860000002,142.1974614,-0.783007200000003,-6.631341664118199,5.065327264118193,-0.547632279895887,5,no clear difference
+S03_heavy,proposed-noslope,rtt_p95_ms,157.06336824,155.31147706,-1.7518911800000183,-4.754277110400802,1.2504947504007655,-1.1154040561024061,5,no clear difference
+S03_heavy,proposed-noslope,rtt_max_ms,218.5300714,220.522977,1.9929056000000003,-53.39296319392041,57.37877439392041,0.9119594329661672,5,no clear difference
+S03_heavy,proposed-noslope,qdelay_mean_ms,89.34653045835312,86.13394162375802,-3.2125888345950955,-6.061540176260293,-0.36363749292989755,-3.595650349391655,5,proposed better
+S03_heavy,proposed-noslope,qdelay_p95_ms,102.84508799999999,101.114784,-1.730304000000001,-5.053580808740362,1.5929728087403603,-1.682437181637689,5,no clear difference
+S03_heavy,proposed-noslope,rtt_slope_abs_mean,9.534405635804175,7.640106363869691,-1.8942992719344836,-3.7773396012733214,-0.011258942595645971,-19.86803734069061,5,proposed better
+S03_heavy,proposed-noslope,goodput_mbps,9.640488016032066,9.640488016032066,0.0,0.0,0.0,0.0,5,no clear difference
+S03_heavy,proposed-noslope,utilization_pct,99.86693386773548,99.86693386773548,0.0,0.0,0.0,0.0,5,no clear difference
+S03_heavy,proposed-noslope,loss_rate_pct,0.2893088,0.289734,0.00042520000000001446,-0.0008313616665083351,0.001681761666508364,0.14697098740170175,5,no clear difference
+S03_heavy,proposed-noslope,drops_total,141.4,141.6,0.2,-0.3552000000000001,0.7552000000000001,0.14144271570014144,5,no clear difference
+S03_heavy,proposed-noslope,drops_window,0.8,1.0,0.2,-0.3552000000000001,0.7552000000000001,25.0,5,no clear difference
+S03_heavy,proposed-noslope,retx_total,141.4,141.6,0.2,-0.3552000000000001,0.7552000000000001,0.14144271570014144,5,no clear difference
+S03_heavy,proposed-noslope,retx_window,0.8,1.0,0.2,-0.3552000000000001,0.7552000000000001,25.0,5,no clear difference
+S03_heavy,proposed-noslope,loss_events_window,0.8,0.8,0.0,0.0,0.0,0.0,5,no clear difference
+S03_heavy,proposed-noslope,cwnd_mean_segs,29.733444811995856,29.10375134373964,-0.6296934682562139,-1.1710208565844633,-0.08836607992796452,-2.1177952041472374,5,changed (neutral metric)
+S03_heavy,proposed-noslope,cwnd_max_segs,114.99627071823204,110.03425414364642,-4.962016574585627,-29.678209916426155,19.754176767254897,-4.314936948471779,5,no clear difference
+S03_heavy,proposed-noslope,queue_mean_pkts,74.3560186,71.68387024799999,-2.6721483519999993,-5.051299876709142,-0.29299682729085674,-3.5937216681475186,5,proposed better
+S03_heavy,proposed-noslope,queue_p95_pkts,85.8,84.0,-1.8,-4.891222774243228,1.2912227742432274,-2.097902097902098,5,no clear difference
+S03_heavy,proposed-noslope,fairness_jain,0.4704502281878294,0.5296022371132066,0.05915200892537723,-0.008618343598404903,0.12692236144915936,12.573489262239347,5,no clear difference
+S04_ramp,proposed-baseline,rtt_mean_ms,139.09745866937072,83.35944880747903,-55.73800986189169,-59.08709813953222,-52.38892158425116,-40.07119209444277,5,proposed better
+S04_ramp,proposed-baseline,rtt_median_ms,150.6309918,79.9177239,-70.71326789999999,-74.3637749540256,-67.06276084597438,-46.94470045970977,5,proposed better
+S04_ramp,proposed-baseline,rtt_p95_ms,177.78621126000002,129.6964896,-48.08972166000001,-64.78352632129007,-31.395916998709954,-27.049185265370287,5,proposed better
+S04_ramp,proposed-baseline,rtt_max_ms,218.1416494,234.67066,16.529010600000003,-77.10239940732274,110.16042060732275,7.577191538371124,5,no clear difference
+S04_ramp,proposed-baseline,qdelay_mean_ms,83.25220725539847,27.241789859679926,-56.01041739571855,-58.73845853182408,-53.28237625961302,-67.27799687507573,5,proposed better
+S04_ramp,proposed-baseline,qdelay_p95_ms,118.73024000000001,72.33063362999998,-46.39960637,-64.35770563135605,-28.441507108643947,-39.07985562060684,5,proposed better
+S04_ramp,proposed-baseline,rtt_slope_abs_mean,24.30055671221867,24.41059530163374,0.1100385894150719,-2.53563839097363,2.7557155698037734,0.4528233271287275,5,no clear difference
+S04_ramp,proposed-baseline,goodput_mbps,9.25470869216758,9.253906885245902,-0.0008018069216760182,-0.011332773033569924,0.009729159190217886,-0.008663772662607969,5,no clear difference
+S04_ramp,proposed-baseline,utilization_pct,95.87060109289618,95.86229508196722,-0.008306010928961882,-0.11739751070685041,0.10078548884892664,-0.008663772662605472,5,no clear difference
+S04_ramp,proposed-baseline,loss_rate_pct,0.32354540000000004,0.1183372,-0.20520820000000004,-0.2578043464241673,-0.1526120535758328,-63.42485474990527,5,proposed better
+S04_ramp,proposed-baseline,drops_total,146.0,53.2,-92.8,-116.4921476409379,-69.1078523590621,-63.56164383561644,5,proposed better
+S04_ramp,proposed-baseline,drops_window,146.0,53.2,-92.8,-116.4921476409379,-69.1078523590621,-63.56164383561644,5,proposed better
+S04_ramp,proposed-baseline,retx_total,145.6,53.2,-92.4,-116.11165538211114,-68.68834461788887,-63.46153846153847,5,proposed better
+S04_ramp,proposed-baseline,retx_window,145.6,53.2,-92.4,-116.11165538211114,-68.68834461788887,-63.46153846153847,5,proposed better
+S04_ramp,proposed-baseline,loss_events_window,62.2,6.8,-55.4,-60.993485010259704,-49.80651498974029,-89.06752411575562,5,proposed better
+S04_ramp,proposed-baseline,cwnd_mean_segs,86.17467952447473,81.50406166294742,-4.670617861527299,-11.871663037951947,2.5304273148973486,-5.4199422467254825,5,no clear difference
+S04_ramp,proposed-baseline,cwnd_max_segs,1832.8,1631.4,-201.4,-488.86093233439567,86.06093233439563,-10.988651243998254,5,no clear difference
+S04_ramp,proposed-baseline,queue_mean_pkts,66.64729252363637,21.782162494545457,-44.865130029090906,-47.05875746411508,-42.67150259406673,-67.3172582564844,5,proposed better
+S04_ramp,proposed-baseline,queue_p95_pkts,99.0,59.2,-39.8,-55.241149097136514,-24.35885090286348,-40.2020202020202,5,proposed better
+S04_ramp,proposed-baseline,fairness_jain,0.9165752334214672,0.8489088083999521,-0.0676664250215151,-0.15271707562227865,0.017384225579248444,-7.3825281934494695,5,no clear difference
+S04_ramp,noslope-baseline,rtt_mean_ms,139.09745866937072,83.39580626073948,-55.701652408631254,-58.080167395782844,-53.323137421479665,-40.045053979765314,5,noslope better
+S04_ramp,noslope-baseline,rtt_median_ms,150.6309918,79.9982095,-70.6327823,-73.23353500090388,-68.03202959909612,-46.891268161987895,5,noslope better
+S04_ramp,noslope-baseline,rtt_p95_ms,177.78621126000002,129.17583063,-48.61038063000001,-67.95805160977967,-29.262709650220348,-27.34204204335661,5,noslope better
+S04_ramp,noslope-baseline,rtt_max_ms,218.1416494,234.25888300000003,16.1172336,-76.44173327161454,108.67620047161455,7.388425660267332,5,no clear difference
+S04_ramp,noslope-baseline,qdelay_mean_ms,83.25220725539847,27.123081406477212,-56.12912584892126,-57.907888826425676,-54.35036287141685,-67.4205858311121,5,noslope better
+S04_ramp,noslope-baseline,qdelay_p95_ms,118.73024000000001,72.06018529,-46.67005470999999,-66.28893112875147,-27.051178291248508,-39.307639494369745,5,noslope better
+S04_ramp,noslope-baseline,rtt_slope_abs_mean,24.30055671221867,24.78147274017162,0.4809160279529564,-2.74601664385516,3.707848699761073,1.9790329647515645,5,no clear difference
+S04_ramp,noslope-baseline,goodput_mbps,9.25470869216758,9.254244488160293,-0.00046420400728628406,-0.011024450874820343,0.010096042860247775,-0.005015868383616958,5,no clear difference
+S04_ramp,noslope-baseline,utilization_pct,95.87060109289618,95.86579234972677,-0.004808743169400031,-0.11420356569218565,0.1045860793533856,-0.005015868383614786,5,no clear difference
+S04_ramp,noslope-baseline,loss_rate_pct,0.32354540000000004,0.12144620000000002,-0.20209919999999998,-0.24458354463511164,-0.15961485536488831,-62.46393860027061,5,noslope better
+S04_ramp,noslope-baseline,drops_total,146.0,54.6,-91.4,-110.5644553316811,-72.23554466831891,-62.602739726027394,5,noslope better
+S04_ramp,noslope-baseline,drops_window,146.0,54.6,-91.4,-110.5644553316811,-72.23554466831891,-62.602739726027394,5,noslope better
+S04_ramp,noslope-baseline,retx_total,145.6,54.6,-91.0,-110.13225966790122,-71.86774033209878,-62.5,5,noslope better
+S04_ramp,noslope-baseline,retx_window,145.6,54.6,-91.0,-110.13225966790122,-71.86774033209878,-62.5,5,noslope better
+S04_ramp,noslope-baseline,loss_events_window,62.2,6.8,-55.4,-58.516052271705334,-52.28394772829466,-89.06752411575562,5,noslope better
+S04_ramp,noslope-baseline,cwnd_mean_segs,86.17467952447473,132.91139395363263,46.73671442915786,-102.48265625306699,195.95608511138272,54.23485725396173,5,no clear difference
+S04_ramp,noslope-baseline,cwnd_max_segs,1832.8,2288.0,455.2,-1137.9701740689975,2048.3701740689976,24.836316019205587,5,no clear difference
+S04_ramp,noslope-baseline,queue_mean_pkts,66.64729252363637,21.688227465454545,-44.95906505818182,-46.38897233341827,-43.52915778294537,-67.45820176001472,5,noslope better
+S04_ramp,noslope-baseline,queue_p95_pkts,99.0,58.6,-40.4,-56.67219122798156,-24.12780877201844,-40.80808080808081,5,noslope better
+S04_ramp,noslope-baseline,fairness_jain,0.9165752334214672,0.8722081806148267,-0.0443670528066404,-0.08424220649020325,-0.004491899123077542,-4.840524944256177,5,noslope worse
+S04_ramp,proposed-noslope,rtt_mean_ms,83.39580626073948,83.35944880747903,-0.036357453260444574,-1.1037050484612068,1.0309901419403178,-0.04359626088003983,5,no clear difference
+S04_ramp,proposed-noslope,rtt_median_ms,79.9982095,79.9177239,-0.08048560000000009,-1.4792832381128336,1.3183120381128335,-0.10060925176081609,5,no clear difference
+S04_ramp,proposed-noslope,rtt_p95_ms,129.17583063,129.6964896,0.5206589699999938,-2.577296907296999,3.6186148472969863,0.4030622195039906,5,no clear difference
+S04_ramp,proposed-noslope,rtt_max_ms,234.25888300000003,234.67066,0.4117770000000064,-2.3183388592834038,3.1418928592834168,0.17577860644029725,5,no clear difference
+S04_ramp,proposed-noslope,qdelay_mean_ms,27.123081406477212,27.241789859679926,0.11870845320271214,-0.8829480336192729,1.120364940024697,0.43766580730153914,5,no clear difference
+S04_ramp,proposed-noslope,qdelay_p95_ms,72.06018529,72.33063362999998,0.2704483399999759,-1.412079842931991,1.952976522931943,0.37530897112126466,5,no clear difference
+S04_ramp,proposed-noslope,rtt_slope_abs_mean,24.78147274017162,24.41059530163374,-0.3708774385378845,-2.285452502255699,1.5436976251799301,-1.4965915965788403,5,no clear difference
+S04_ramp,proposed-noslope,goodput_mbps,9.254244488160293,9.253906885245902,-0.0003376029143897341,-0.001328180924319252,0.0006529750955397838,-0.0036480872622466046,5,no clear difference
+S04_ramp,proposed-noslope,utilization_pct,95.86579234972677,95.86229508196722,-0.0034972677595618506,-0.01375878029337377,0.006764244774250068,-0.0036480872622462793,5,no clear difference
+S04_ramp,proposed-noslope,loss_rate_pct,0.12144620000000002,0.1183372,-0.0031090000000000063,-0.01866514948362182,0.012447149483621805,-2.5599812921277123,5,no clear difference
+S04_ramp,proposed-noslope,drops_total,54.6,53.2,-1.4,-8.400805622212346,5.600805622212345,-2.564102564102564,5,no clear difference
+S04_ramp,proposed-noslope,drops_window,54.6,53.2,-1.4,-8.400805622212346,5.600805622212345,-2.564102564102564,5,no clear difference
+S04_ramp,proposed-noslope,retx_total,54.6,53.2,-1.4,-8.400805622212346,5.600805622212345,-2.564102564102564,5,no clear difference
+S04_ramp,proposed-noslope,retx_window,54.6,53.2,-1.4,-8.400805622212346,5.600805622212345,-2.564102564102564,5,no clear difference
+S04_ramp,proposed-noslope,loss_events_window,6.8,6.8,0.0,-3.511393113850968,3.511393113850968,0.0,5,no clear difference
+S04_ramp,proposed-noslope,cwnd_mean_segs,132.91139395363263,81.50406166294742,-51.40733229068517,-197.11598828455578,94.30132370318546,-38.67789717758817,5,no clear difference
+S04_ramp,proposed-noslope,cwnd_max_segs,2288.0,1631.4,-656.6,-2479.3215999999998,1166.1216,-28.697552447552447,5,no clear difference
+S04_ramp,proposed-noslope,queue_mean_pkts,21.688227465454545,21.782162494545457,0.09393502909091182,-0.7132471392851932,0.9011171974670168,0.43311528911495173,5,no clear difference
+S04_ramp,proposed-noslope,queue_p95_pkts,58.6,59.2,0.6,-1.0655999999999999,2.2655999999999996,1.023890784982935,5,no clear difference
+S04_ramp,proposed-noslope,fairness_jain,0.8722081806148267,0.8489088083999521,-0.023299372214874704,-0.08016369634550687,0.033564951915757466,-2.6713086087372835,5,no clear difference
+S05_reference,proposed-baseline,rtt_mean_ms,145.0874474234712,109.1970718013923,-35.89037562207889,-44.6334170667208,-27.14733417743698,-24.737064618226103,5,proposed better
+S05_reference,proposed-baseline,rtt_median_ms,148.9724781,110.5076248,-38.4648533,-47.5516562695523,-29.3780503304477,-25.820107036267395,5,proposed better
+S05_reference,proposed-baseline,rtt_p95_ms,170.55240183,122.56794284,-47.98445898999999,-60.23724732367466,-35.73167065632533,-28.134730719200913,5,proposed better
+S05_reference,proposed-baseline,rtt_max_ms,188.2273022,147.5127366,-40.7145656,-50.171623849185416,-31.257507350814585,-21.630531343821172,5,proposed better
+S05_reference,proposed-baseline,qdelay_mean_ms,92.34506862759297,57.130105302431616,-35.21496332516135,-43.86441720552202,-26.56550944480068,-38.134102717683206,5,proposed better
+S05_reference,proposed-baseline,qdelay_p95_ms,118.177504,70.57011200000001,-47.60739199999999,-59.80617582937806,-35.40860817062192,-40.284648421750376,5,proposed better
+S05_reference,proposed-baseline,rtt_slope_abs_mean,13.697085773942996,4.725651370530995,-8.971434403412001,-10.5163544827914,-7.426514324032603,-65.4988553877573,5,proposed better
+S05_reference,proposed-baseline,goodput_mbps,9.640163014028058,9.640488016032066,0.0003250020040084678,-0.008760354199017589,0.009410358207034526,0.0033713330732637534,5,no clear difference
+S05_reference,proposed-baseline,utilization_pct,99.86356713426855,99.86693386773548,0.003366733466941696,-0.09074952554231072,0.0974829924761941,0.0033713330732669062,5,no clear difference
+S05_reference,proposed-baseline,loss_rate_pct,0.209491,0.1968502,-0.012640800000000002,-0.03940679912171949,0.014125199121719485,-6.034053968905587,5,no clear difference
+S05_reference,proposed-baseline,drops_total,102.4,96.2,-6.2,-19.320822071806322,6.920822071806323,-6.0546875,5,no clear difference
+S05_reference,proposed-baseline,drops_window,11.2,0.0,-11.2,-13.588005494131032,-8.811994505868967,-100.0,5,proposed better
+S05_reference,proposed-baseline,retx_total,102.2,96.0,-6.2,-19.320822071806322,6.920822071806323,-6.066536203522505,5,no clear difference
+S05_reference,proposed-baseline,retx_window,11.4,0.0,-11.4,-13.282774803315574,-9.517225196684427,-100.0,5,proposed better
+S05_reference,proposed-baseline,loss_events_window,9.4,0.0,-9.4,-10.5104,-8.2896,-100.0,5,proposed better
+S05_reference,proposed-baseline,cwnd_mean_segs,60.53747225407735,45.46531780342127,-15.072154450656075,-18.655271086362642,-11.489037814949508,-24.89723123456138,5,changed (neutral metric)
+S05_reference,proposed-baseline,cwnd_max_segs,111.82237569060774,100.9921270718232,-10.830248618784532,-26.872471465052513,5.211974227483447,-9.685224939908153,5,no clear difference
+S05_reference,proposed-baseline,queue_mean_pkts,76.82642638400002,47.564358148000004,-29.262068236000005,-36.46838387973975,-22.055752592260266,-38.088545326500004,5,proposed better
+S05_reference,proposed-baseline,queue_p95_pkts,98.2,58.8,-39.4,-50.38538648204968,-28.414613517950315,-40.122199592668025,5,proposed better
+S05_reference,proposed-baseline,fairness_jain,0.9691896100180672,0.5524646913803062,-0.4167249186377611,-0.48037958840162537,-0.3530702488738969,-42.9972540285479,5,proposed worse
+S05_reference,noslope-baseline,rtt_mean_ms,145.0874474234712,109.11609909799199,-35.9713483254792,-44.995095752413384,-26.947600898545012,-24.79287420398852,5,noslope better
+S05_reference,noslope-baseline,rtt_median_ms,148.9724781,108.7677175,-40.20476060000001,-50.111363318153494,-30.29815788184652,-26.988045787230554,5,noslope better
+S05_reference,noslope-baseline,rtt_p95_ms,170.55240183,124.54137796,-46.01102387,-59.135005621844186,-32.88704211815582,-26.97764638686355,5,noslope better
+S05_reference,noslope-baseline,rtt_max_ms,188.2273022,160.0923638,-28.134938400000003,-36.215093947935394,-20.054782852064612,-14.947320644326805,5,noslope better
+S05_reference,noslope-baseline,qdelay_mean_ms,92.34506862759297,56.983178127743734,-35.361890499849224,-44.415076228262585,-26.308704771435863,-38.29320939968741,5,noslope better
+S05_reference,noslope-baseline,qdelay_p95_ms,118.177504,72.492672,-45.68483199999999,-57.95047193983977,-33.41919206016021,-38.65780749608656,5,noslope better
+S05_reference,noslope-baseline,rtt_slope_abs_mean,13.697085773942996,7.825868386019446,-5.871217387923552,-7.556946330548986,-4.185488445298117,-42.86471943610671,5,noslope better
+S05_reference,noslope-baseline,goodput_mbps,9.640163014028058,9.640488016032066,0.0003250020040084678,-0.008760354199017589,0.009410358207034526,0.0033713330732637534,5,no clear difference
+S05_reference,noslope-baseline,utilization_pct,99.86356713426855,99.86693386773548,0.003366733466941696,-0.09074952554231072,0.0974829924761941,0.0033713330732669062,5,no clear difference
+S05_reference,noslope-baseline,loss_rate_pct,0.209491,0.1968632,-0.0126278,-0.0394252319323598,0.014169631932359797,-6.027848451723463,5,no clear difference
+S05_reference,noslope-baseline,drops_total,102.4,96.2,-6.2,-19.320822071806322,6.920822071806323,-6.0546875,5,no clear difference
+S05_reference,noslope-baseline,drops_window,11.2,0.0,-11.2,-13.588005494131032,-8.811994505868967,-100.0,5,noslope better
+S05_reference,noslope-baseline,retx_total,102.2,96.0,-6.2,-19.320822071806322,6.920822071806323,-6.066536203522505,5,no clear difference
+S05_reference,noslope-baseline,retx_window,11.4,0.0,-11.4,-13.282774803315574,-9.517225196684427,-100.0,5,noslope better
+S05_reference,noslope-baseline,loss_events_window,9.4,0.0,-9.4,-10.5104,-8.2896,-100.0,5,noslope better
+S05_reference,noslope-baseline,cwnd_mean_segs,60.53747225407735,45.40655119918923,-15.13092105488812,-18.900981678037382,-11.360860431738855,-24.99430599180496,5,changed (neutral metric)
+S05_reference,noslope-baseline,cwnd_max_segs,111.82237569060774,101.19198895027623,-10.630386740331492,-26.74259081982464,5.481817339161655,-9.506493378162387,5,no clear difference
+S05_reference,noslope-baseline,queue_mean_pkts,76.82642638400002,47.437911028,-29.388515356000006,-36.92458955903413,-21.85244115296588,-38.253133380313656,5,noslope better
+S05_reference,noslope-baseline,queue_p95_pkts,98.2,60.0,-38.2,-48.7488,-27.651200000000003,-38.90020366598778,5,noslope better
+S05_reference,noslope-baseline,fairness_jain,0.9691896100180672,0.552693566557638,-0.4164960434604293,-0.48036661864402863,-0.35262546827682995,-42.97363892011442,5,noslope worse
+S05_reference,proposed-noslope,rtt_mean_ms,109.11609909799199,109.1970718013923,0.0809727034003032,-0.26479359487609944,0.42673900167670586,0.0742078429028016,5,no clear difference
+S05_reference,proposed-noslope,rtt_median_ms,108.7677175,110.5076248,1.7399072999999987,0.5410511143927754,2.938763485607222,1.5996541437030696,5,proposed worse
+S05_reference,proposed-noslope,rtt_p95_ms,124.54137796,122.56794284,-1.9734351199999907,-3.066939671043855,-0.8799305689561265,-1.5845618157796642,5,proposed better
+S05_reference,proposed-noslope,rtt_max_ms,160.0923638,147.5127366,-12.5796272,-14.427298477558043,-10.731955922441955,-7.857730938194818,5,proposed better
+S05_reference,proposed-noslope,qdelay_mean_ms,56.983178127743734,57.130105302431616,0.14692717468787747,-0.2865201456970649,0.5803744950728198,0.2578430679287475,5,no clear difference
+S05_reference,proposed-noslope,qdelay_p95_ms,72.492672,70.57011200000001,-1.9225599999999985,-2.6758539327156274,-1.1692660672843695,-2.652074957314304,5,proposed better
+S05_reference,proposed-noslope,rtt_slope_abs_mean,7.825868386019446,4.725651370530995,-3.1002170154884503,-3.4823917749674953,-2.7180422560094053,-39.614990472199175,5,proposed better
+S05_reference,proposed-noslope,goodput_mbps,9.640488016032066,9.640488016032066,0.0,0.0,0.0,0.0,5,no clear difference
+S05_reference,proposed-noslope,utilization_pct,99.86693386773548,99.86693386773548,0.0,0.0,0.0,0.0,5,no clear difference
+S05_reference,proposed-noslope,loss_rate_pct,0.1968632,0.1968502,-1.3000000000001898e-05,-4.545665200232994e-05,1.945665200232614e-05,-0.006603570398125144,5,no clear difference
+S05_reference,proposed-noslope,drops_total,96.2,96.2,0.0,0.0,0.0,0.0,5,no clear difference
+S05_reference,proposed-noslope,drops_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S05_reference,proposed-noslope,retx_total,96.0,96.0,0.0,0.0,0.0,0.0,5,no clear difference
+S05_reference,proposed-noslope,retx_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S05_reference,proposed-noslope,loss_events_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S05_reference,proposed-noslope,cwnd_mean_segs,45.40655119918923,45.46531780342127,0.05876660423204498,-0.14487916744741342,0.2624123759115034,0.1294231838358477,5,no clear difference
+S05_reference,proposed-noslope,cwnd_max_segs,101.19198895027623,100.9921270718232,-0.19986187845304074,-0.3244243976594653,-0.07529935924661615,-0.1975076095709997,5,changed (neutral metric)
+S05_reference,proposed-noslope,queue_mean_pkts,47.437911028,47.564358148000004,0.1264471200000017,-0.2260496812251117,0.4789439212251151,0.2665528840959436,5,no clear difference
+S05_reference,proposed-noslope,queue_p95_pkts,60.0,58.8,-1.2,-1.7551999999999999,-0.6448,-2.0,5,proposed better
+S05_reference,proposed-noslope,fairness_jain,0.552693566557638,0.5524646913803062,-0.00022887517733174433,-0.0004922085867525485,3.445823208905987e-05,-0.04141086330301548,5,no clear difference
+S06_capacity5,proposed-baseline,rtt_mean_ms,242.2214886164755,190.95862635950198,-51.26286225697355,-72.76933330478275,-29.75639120916434,-21.16363108400397,5,proposed better
+S06_capacity5,proposed-baseline,rtt_median_ms,247.11360050000002,192.19285399999998,-54.92074649999999,-75.05731003348788,-34.78418296651211,-22.224898341845815,5,proposed better
+S06_capacity5,proposed-baseline,rtt_p95_ms,292.70282101,207.95572766,-84.74709335000003,-108.90591314131765,-60.5882735586824,-28.953288887880145,5,proposed better
+S06_capacity5,proposed-baseline,rtt_max_ms,316.5689056,260.6268742,-55.9420314,-91.12357793703674,-20.76048486296326,-17.67136014005287,5,proposed better
+S06_capacity5,proposed-baseline,qdelay_mean_ms,185.23071644411965,134.45108688448764,-50.77962955963202,-72.60761628722238,-28.95164283204165,-27.414259651126063,5,proposed better
+S06_capacity5,proposed-baseline,qdelay_p95_ms,235.698848,153.43731200000002,-82.261536,-107.77616364054293,-56.74690835945708,-34.901119245181896,5,proposed better
+S06_capacity5,proposed-baseline,rtt_slope_abs_mean,17.22500789821887,7.547580258121428,-9.67742764009744,-11.594933952341133,-7.759921327853746,-56.182427882068616,5,proposed better
+S06_capacity5,proposed-baseline,goodput_mbps,4.820244008016031,4.820244008016031,1.7763568394002506e-16,-3.154809746774846e-16,6.707523425575347e-16,3.685201073734404e-15,5,no clear difference
+S06_capacity5,proposed-baseline,utilization_pct,99.86693386773544,99.86693386773544,0.0,0.0,0.0,0.0,5,no clear difference
+S06_capacity5,proposed-baseline,loss_rate_pct,0.34785720000000003,0.17950300000000002,-0.1683542,-0.2536284922662628,-0.08307990773373726,-48.39750334332593,5,proposed better
+S06_capacity5,proposed-baseline,drops_total,85.4,44.0,-41.4,-62.14769845934724,-20.652301540652758,-48.47775175644028,5,proposed better
+S06_capacity5,proposed-baseline,drops_window,6.4,0.0,-6.4,-7.510400000000001,-5.2896,-100.0,5,proposed better
+S06_capacity5,proposed-baseline,retx_total,85.4,44.0,-41.4,-62.14769845934724,-20.652301540652758,-48.47775175644028,5,proposed better
+S06_capacity5,proposed-baseline,retx_window,6.4,0.0,-6.4,-7.510400000000001,-5.2896,-100.0,5,proposed better
+S06_capacity5,proposed-baseline,loss_events_window,5.8,0.0,-5.8,-6.3552,-5.2448,-100.0,5,proposed better
+S06_capacity5,proposed-baseline,cwnd_mean_segs,50.61416309101243,39.69649920518232,-10.917663885830109,-15.47482363880191,-6.360504132858308,-21.5703732297191,5,changed (neutral metric)
+S06_capacity5,proposed-baseline,cwnd_max_segs,87.6414364640884,84.70814917127072,-2.9332872928176785,-13.58709802811385,7.720523442478494,-3.346918319874424,5,no clear difference
+S06_capacity5,proposed-baseline,queue_mean_pkts,77.08420305199999,55.97084304,-21.113360011999994,-30.207956706668607,-12.01876331733138,-27.389995843580557,5,proposed better
+S06_capacity5,proposed-baseline,queue_p95_pkts,98.2,64.0,-34.2,-44.821601415982435,-23.57839858401757,-34.82688391038697,5,proposed better
+S06_capacity5,proposed-baseline,fairness_jain,0.9788050997349155,0.5874015091160043,-0.39140359061891133,-0.40758775151273247,-0.3752194297250902,-39.987898584193424,5,proposed worse
+S06_capacity5,noslope-baseline,rtt_mean_ms,242.2214886164755,190.620976929791,-51.60051168668451,-72.71425066867901,-30.486772704690015,-21.30302805973868,5,noslope better
+S06_capacity5,noslope-baseline,rtt_median_ms,247.11360050000002,190.8031874,-56.310413100000005,-77.87424881316464,-34.74657738683537,-22.787257757591533,5,noslope better
+S06_capacity5,noslope-baseline,rtt_p95_ms,292.70282101,211.39611369,-81.30670732000002,-107.02443389795664,-55.58898074204338,-27.7779035540017,5,noslope better
+S06_capacity5,noslope-baseline,rtt_max_ms,316.5689056,266.56254820000004,-50.00635739999999,-76.42514846266891,-23.58756633733106,-15.79635792252617,5,noslope better
+S06_capacity5,noslope-baseline,qdelay_mean_ms,185.23071644411965,133.93821275143776,-51.2925036926819,-72.8035001588332,-29.78150722653059,-27.69114360584779,5,noslope better
+S06_capacity5,noslope-baseline,qdelay_p95_ms,235.698848,154.44665600000002,-81.25219200000001,-106.65226502697273,-55.85211897302729,-34.47288465321647,5,noslope better
+S06_capacity5,noslope-baseline,rtt_slope_abs_mean,17.22500789821887,9.410936424499239,-7.814071473719631,-9.689205038863737,-5.938937908575524,-45.36469022187,5,noslope better
+S06_capacity5,noslope-baseline,goodput_mbps,4.820244008016031,4.820244008016031,1.7763568394002506e-16,-3.154809746774846e-16,6.707523425575347e-16,3.685201073734404e-15,5,no clear difference
+S06_capacity5,noslope-baseline,utilization_pct,99.86693386773544,99.86693386773544,0.0,0.0,0.0,0.0,5,no clear difference
+S06_capacity5,noslope-baseline,loss_rate_pct,0.34785720000000003,0.17952240000000003,-0.1683348,-0.2536035560150357,-0.08306604398496432,-48.39192634218869,5,noslope better
+S06_capacity5,noslope-baseline,drops_total,85.4,44.0,-41.4,-62.14769845934724,-20.652301540652758,-48.47775175644028,5,noslope better
+S06_capacity5,noslope-baseline,drops_window,6.4,0.0,-6.4,-7.510400000000001,-5.2896,-100.0,5,noslope better
+S06_capacity5,noslope-baseline,retx_total,85.4,44.0,-41.4,-62.14769845934724,-20.652301540652758,-48.47775175644028,5,noslope better
+S06_capacity5,noslope-baseline,retx_window,6.4,0.0,-6.4,-7.510400000000001,-5.2896,-100.0,5,noslope better
+S06_capacity5,noslope-baseline,loss_events_window,5.8,0.0,-5.8,-6.3552,-5.2448,-100.0,5,noslope better
+S06_capacity5,noslope-baseline,cwnd_mean_segs,50.61416309101243,39.60384758420166,-11.010315506810773,-15.514572492630478,-6.506058520991069,-21.753427962470603,5,changed (neutral metric)
+S06_capacity5,noslope-baseline,cwnd_max_segs,87.6414364640884,84.71823204419888,-2.9232044198895037,-13.301986721439619,7.45557788166061,-3.3354136328964716,5,no clear difference
+S06_capacity5,noslope-baseline,queue_mean_pkts,77.08420305199999,55.749920764,-21.334282288000004,-30.299498274188544,-12.369066301811467,-27.67659448150249,5,noslope better
+S06_capacity5,noslope-baseline,queue_p95_pkts,98.2,64.4,-33.8,-44.3488,-23.251199999999997,-34.41955193482688,5,noslope better
+S06_capacity5,noslope-baseline,fairness_jain,0.9788050997349155,0.5876247480076305,-0.39118035172728505,-0.4070820370934948,-0.3752786663610753,-39.96509129685024,5,noslope worse
+S06_capacity5,proposed-noslope,rtt_mean_ms,190.620976929791,190.95862635950198,0.3376494297109673,-0.5176680552288269,1.1929669146507615,0.1771313079752652,5,no clear difference
+S06_capacity5,proposed-noslope,rtt_median_ms,190.8031874,192.19285399999998,1.3896665999999982,-2.8760859143203152,5.655419114320312,0.7283246254616804,5,no clear difference
+S06_capacity5,proposed-noslope,rtt_p95_ms,211.39611369,207.95572766,-3.4403860300000075,-5.78870625946151,-1.0920658005385047,-1.627459450387594,5,proposed better
+S06_capacity5,proposed-noslope,rtt_max_ms,266.56254820000004,260.6268742,-5.935674000000006,-25.562740211478914,13.691392211478902,-2.2267471706289776,5,no clear difference
+S06_capacity5,proposed-noslope,qdelay_mean_ms,133.93821275143776,134.45108688448764,0.5128741330498855,-0.2805129694791937,1.3062612355789647,0.38291845360194265,5,no clear difference
+S06_capacity5,proposed-noslope,qdelay_p95_ms,154.44665600000002,153.43731200000002,-1.0093439999999987,-2.521828513665694,0.5031405136656968,-0.6535227282615939,5,no clear difference
+S06_capacity5,proposed-noslope,rtt_slope_abs_mean,9.410936424499239,7.547580258121428,-1.8633561663778102,-2.5553149750551274,-1.171397357700493,-19.799901756078015,5,proposed better
+S06_capacity5,proposed-noslope,goodput_mbps,4.820244008016031,4.820244008016031,0.0,0.0,0.0,0.0,5,no clear difference
+S06_capacity5,proposed-noslope,utilization_pct,99.86693386773544,99.86693386773544,0.0,0.0,0.0,0.0,5,no clear difference
+S06_capacity5,proposed-noslope,loss_rate_pct,0.17952240000000003,0.17950300000000002,-1.939999999999442e-05,-6.264327309720726e-05,2.3843273097218412e-05,-0.010806450894147146,5,no clear difference
+S06_capacity5,proposed-noslope,drops_total,44.0,44.0,0.0,0.0,0.0,0.0,5,no clear difference
+S06_capacity5,proposed-noslope,drops_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S06_capacity5,proposed-noslope,retx_total,44.0,44.0,0.0,0.0,0.0,0.0,5,no clear difference
+S06_capacity5,proposed-noslope,retx_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S06_capacity5,proposed-noslope,loss_events_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S06_capacity5,proposed-noslope,cwnd_mean_segs,39.60384758420166,39.69649920518232,0.09265162098066355,-0.06378650992844521,0.24908975188977234,0.23394600937112772,5,no clear difference
+S06_capacity5,proposed-noslope,cwnd_max_segs,84.71823204419888,84.70814917127072,-0.010082872928174424,-0.3893721107995113,0.3692063649431624,-0.01190165644971678,5,no clear difference
+S06_capacity5,proposed-noslope,queue_mean_pkts,55.749920764,55.97084304,0.2209222760000074,-0.12110872457649102,0.5629532765765058,0.3962737040205193,5,no clear difference
+S06_capacity5,proposed-noslope,queue_p95_pkts,64.4,64.0,-0.4,-1.0799783525966102,0.2799783525966102,-0.6211180124223602,5,no clear difference
+S06_capacity5,proposed-noslope,fairness_jain,0.5876247480076305,0.5874015091160043,-0.00022323889162627618,-0.0005473100559969565,0.00010083227274440407,-0.03799004252002289,5,no clear difference
+S07_capacity20,proposed-baseline,rtt_mean_ms,92.87336830438264,88.09600694425465,-4.777361360127983,-12.79806265088709,3.243339930631123,-5.143951864080871,5,no clear difference
+S07_capacity20,proposed-baseline,rtt_median_ms,95.57202989999999,87.2425687,-8.3294612,-16.04565421595563,-0.6132681840443732,-8.715375417593805,5,proposed better
+S07_capacity20,proposed-baseline,rtt_p95_ms,109.16621888,105.50166985999999,-3.6645490200000013,-6.242630755752014,-1.0864672842479886,-3.356852566294546,5,proposed better
+S07_capacity20,proposed-baseline,rtt_max_ms,120.60558379999998,130.6360318,10.030447999999998,2.6154035623056693,17.445492437694327,8.316735995104068,5,proposed worse
+S07_capacity20,proposed-baseline,qdelay_mean_ms,42.322041782890935,37.72152912675067,-4.600512656140258,-12.783754761449043,3.5827294491685278,-10.870252148373561,5,no clear difference
+S07_capacity20,proposed-baseline,qdelay_p95_ms,58.671839999999996,55.49961599999999,-3.1722240000000044,-5.763740611517567,-0.5807073884824421,-5.406723225315594,5,proposed better
+S07_capacity20,proposed-baseline,rtt_slope_abs_mean,11.1558655582046,5.385363043229968,-5.770502514974632,-8.275912128622242,-3.265092901327024,-51.72617476311112,5,proposed better
+S07_capacity20,proposed-baseline,goodput_mbps,19.28097603206413,19.280883174348702,-9.285771542835163e-05,-0.00025071080633549004,6.49953754787868e-05,-0.0004816027740189599,5,no clear difference
+S07_capacity20,proposed-baseline,utilization_pct,99.86693386773548,99.86645290581164,-0.00048096192384150527,-0.0012985711654301129,0.0003366473177471022,-0.00048160277402578,5,no clear difference
+S07_capacity20,proposed-baseline,loss_rate_pct,0.132932,0.1314724,-0.0014595999999999943,-0.013769016553633627,0.010849816553633637,-1.0980049950350512,5,no clear difference
+S07_capacity20,proposed-baseline,drops_total,129.6,128.2,-1.4,-13.391548864095913,10.591548864095913,-1.080246913580247,5,no clear difference
+S07_capacity20,proposed-baseline,drops_window,14.0,0.4,-13.6,-15.015487816973357,-12.184512183026643,-97.14285714285714,5,proposed better
+S07_capacity20,proposed-baseline,retx_total,129.6,128.2,-1.4,-13.391548864095913,10.591548864095913,-1.080246913580247,5,no clear difference
+S07_capacity20,proposed-baseline,retx_window,14.0,0.4,-13.6,-15.015487816973357,-12.184512183026643,-97.14285714285714,5,proposed better
+S07_capacity20,proposed-baseline,loss_events_window,11.8,0.4,-11.4,-12.5104,-10.2896,-96.61016949152541,5,proposed better
+S07_capacity20,proposed-baseline,cwnd_mean_segs,77.43706119750689,73.32761064365332,-4.109450553853591,-10.798352490138427,2.5794513824312446,-5.306826589625144,5,no clear difference
+S07_capacity20,proposed-baseline,cwnd_max_segs,146.76422651933703,178.98287292817682,32.218646408839774,15.324637950519683,49.11265486715986,21.952656429252382,5,changed (neutral metric)
+S07_capacity20,proposed-baseline,queue_mean_pkts,70.42250132000001,62.78696226000001,-7.635539059999994,-21.264057638693814,5.9929795186938275,-10.842470683204061,5,no clear difference
+S07_capacity20,proposed-baseline,queue_p95_pkts,98.0,92.4,-5.6,-9.4864,-1.7136,-5.714285714285714,5,proposed better
+S07_capacity20,proposed-baseline,fairness_jain,0.9719249286857472,0.5889107596526422,-0.38301416903310503,-0.4222847962879692,-0.34374354177824085,-39.40779351662716,5,proposed worse
+S07_capacity20,noslope-baseline,rtt_mean_ms,92.87336830438264,87.144997661235,-5.728370643147639,-14.680325279837724,3.2235839935424453,-6.167936780728691,5,no clear difference
+S07_capacity20,noslope-baseline,rtt_median_ms,95.57202989999999,87.4896947,-8.082335200000003,-16.275502145098866,0.11083174509886007,-8.456799765011587,5,no clear difference
+S07_capacity20,noslope-baseline,rtt_p95_ms,109.16621888,105.26149473999999,-3.904724139999999,-7.2355548969149535,-0.573893383085045,-3.57686121225123,5,noslope better
+S07_capacity20,noslope-baseline,rtt_max_ms,120.60558379999998,123.4332212,2.8276373999999977,-9.1489928025657,14.804267602565695,2.3445327412776042,5,no clear difference
+S07_capacity20,noslope-baseline,qdelay_mean_ms,42.322041782890935,36.74689406158602,-5.5751477213049085,-14.715480903825764,3.565185461215947,-13.17315395581579,5,no clear difference
+S07_capacity20,noslope-baseline,qdelay_p95_ms,58.671839999999996,55.018975999999995,-3.6528640000000037,-6.711121674754805,-0.5946063252452016,-6.225923713999772,5,noslope better
+S07_capacity20,noslope-baseline,rtt_slope_abs_mean,11.1558655582046,6.5873159300035695,-4.568549628201032,-7.106048449226694,-2.0310508071753692,-40.95199609895876,5,noslope better
+S07_capacity20,noslope-baseline,goodput_mbps,19.28097603206413,19.280836745490987,-0.0001392865731446591,-0.00039705959117894093,0.00011848644488962276,-0.0007224041610394955,5,no clear difference
+S07_capacity20,noslope-baseline,utilization_pct,99.86693386773548,99.86621242484972,-0.0007214428857679423,-0.002056593186365768,0.0006137074148298835,-0.0007224041610443619,5,no clear difference
+S07_capacity20,noslope-baseline,loss_rate_pct,0.132932,0.131686,-0.0012459999999999971,-0.013521773326016734,0.01102977332601674,-0.9373213372250453,5,no clear difference
+S07_capacity20,noslope-baseline,drops_total,129.6,128.4,-1.2,-13.152928638622418,10.75292863862242,-0.9259259259259259,5,no clear difference
+S07_capacity20,noslope-baseline,drops_window,14.0,0.6,-13.4,-14.815487816973357,-11.984512183026643,-95.71428571428571,5,noslope better
+S07_capacity20,noslope-baseline,retx_total,129.6,128.4,-1.2,-13.152928638622418,10.75292863862242,-0.9259259259259259,5,no clear difference
+S07_capacity20,noslope-baseline,retx_window,14.0,0.6,-13.4,-14.815487816973357,-11.984512183026643,-95.71428571428571,5,noslope better
+S07_capacity20,noslope-baseline,loss_events_window,11.8,0.6,-11.2,-12.559956705193219,-9.84004329480678,-94.91525423728812,5,noslope better
+S07_capacity20,noslope-baseline,cwnd_mean_segs,77.43706119750689,72.55430015421132,-4.882761043295576,-12.320979556077816,2.5554574694866634,-6.305457577789352,5,no clear difference
+S07_capacity20,noslope-baseline,cwnd_max_segs,146.76422651933703,179.00524861878452,32.241022099447505,15.396319090293733,49.08572510860128,21.967902440585252,5,changed (neutral metric)
+S07_capacity20,noslope-baseline,queue_mean_pkts,70.42250132000001,61.167762292,-9.254739027999994,-24.468804686009438,5.95932663000945,-13.141735744299169,5,no clear difference
+S07_capacity20,noslope-baseline,queue_p95_pkts,98.0,91.6,-6.4,-11.412198495670339,-1.387801504329663,-6.530612244897959,5,noslope better
+S07_capacity20,noslope-baseline,fairness_jain,0.9719249286857472,0.5759604376883743,-0.3959644909973728,-0.4322796350271343,-0.3596493469676113,-40.74023407680287,5,noslope worse
+S07_capacity20,proposed-noslope,rtt_mean_ms,87.144997661235,88.09600694425465,0.9510092830196555,-3.8564041456522267,5.758422711691538,1.0912953222129653,5,no clear difference
+S07_capacity20,proposed-noslope,rtt_median_ms,87.4896947,87.2425687,-0.24712599999999724,-5.504763734375014,5.01051173437502,-0.2824629813229846,5,no clear difference
+S07_capacity20,proposed-noslope,rtt_p95_ms,105.26149473999999,105.50166985999999,0.24017511999999783,-2.0380842711584513,2.5184345111584467,0.2281699690786643,5,no clear difference
+S07_capacity20,proposed-noslope,rtt_max_ms,123.4332212,130.6360318,7.202810600000001,-2.536746278053629,16.942367478053633,5.835390610384557,5,no clear difference
+S07_capacity20,proposed-noslope,qdelay_mean_ms,36.74689406158602,37.72152912675067,0.9746350651646509,-3.9782200392180247,5.927490169547326,2.652292363896686,5,no clear difference
+S07_capacity20,proposed-noslope,qdelay_p95_ms,55.018975999999995,55.49961599999999,0.4806399999999996,-1.379559725517482,2.3408397255174815,0.8735895048282972,5,no clear difference
+S07_capacity20,proposed-noslope,rtt_slope_abs_mean,6.5873159300035695,5.385363043229968,-1.2019528867736002,-2.572739497650298,0.1688337241030975,-18.24647397430882,5,no clear difference
+S07_capacity20,proposed-noslope,goodput_mbps,19.280836745490987,19.280883174348702,4.6428857716307446e-05,-0.00026927732410340487,0.0003621350395360197,0.00024080312659234196,5,no clear difference
+S07_capacity20,proposed-noslope,utilization_pct,99.86621242484972,99.86645290581164,0.00024048096192643697,-0.0013947375212652728,0.0018756994451181465,0.0002408031265903883,5,no clear difference
+S07_capacity20,proposed-noslope,loss_rate_pct,0.131686,0.1314724,-0.00021359999999999711,-0.0008017574294144076,0.00037455742941441345,-0.1622040308005385,5,no clear difference
+S07_capacity20,proposed-noslope,drops_total,128.4,128.2,-0.2,-0.7552000000000001,0.3552000000000001,-0.1557632398753894,5,no clear difference
+S07_capacity20,proposed-noslope,drops_window,0.6,0.4,-0.2,-0.7552000000000001,0.3552000000000001,-33.333333333333336,5,no clear difference
+S07_capacity20,proposed-noslope,retx_total,128.4,128.2,-0.2,-0.7552000000000001,0.3552000000000001,-0.1557632398753894,5,no clear difference
+S07_capacity20,proposed-noslope,retx_window,0.6,0.4,-0.2,-0.7552000000000001,0.3552000000000001,-33.333333333333336,5,no clear difference
+S07_capacity20,proposed-noslope,loss_events_window,0.6,0.4,-0.2,-0.7552000000000001,0.3552000000000001,-33.333333333333336,5,no clear difference
+S07_capacity20,proposed-noslope,cwnd_mean_segs,72.55430015421132,73.32761064365332,0.7733104894419853,-3.2248847853723577,4.771505764256328,1.0658368805134144,5,no clear difference
+S07_capacity20,proposed-noslope,cwnd_max_segs,179.00524861878452,178.98287292817682,-0.022375690607725575,-0.14811584474733785,0.10336446353188672,-0.012500019290148068,5,no clear difference
+S07_capacity20,proposed-noslope,queue_mean_pkts,61.167762292,62.78696226000001,1.6191999680000009,-6.633644023791942,9.872043959791943,2.6471459921491562,5,no clear difference
+S07_capacity20,proposed-noslope,queue_p95_pkts,91.6,92.4,0.8,-2.8617954940165617,4.461795494016562,0.8733624454148472,5,no clear difference
+S07_capacity20,proposed-noslope,fairness_jain,0.5759604376883743,0.5889107596526422,0.012950321964267753,-0.004522994307112702,0.03042363823564821,2.2484742209454627,5,no clear difference
+S08_queue25,proposed-baseline,rtt_mean_ms,69.98225595931771,71.51608806562562,1.5338321063079292,0.7450784190593325,2.322585793556526,2.1917443004403587,5,proposed worse
+S08_queue25,proposed-baseline,rtt_median_ms,71.36411050000001,73.58134890000001,2.217238400000005,1.004949414734415,3.4295273852655956,3.106937625180664,5,proposed worse
+S08_queue25,proposed-baseline,rtt_p95_ms,81.86656312,82.53624998999999,0.6696868699999896,-0.1803651982239871,1.5197389382239663,0.8180224556616146,5,no clear difference
+S08_queue25,proposed-baseline,rtt_max_ms,95.5256376,120.079824,24.554186399999995,-2.1812305282105484,51.28960332821054,25.704289462915863,5,no clear difference
+S08_queue25,proposed-baseline,qdelay_mean_ms,17.13207955268798,18.446836760026677,1.3147572073386953,0.5185653977671557,2.1109490169102347,7.674241783055539,5,proposed worse
+S08_queue25,proposed-baseline,qdelay_p95_ms,28.610239999999997,28.562176,-0.048064000000000814,-0.1297701988480109,0.033642198848009244,-0.16799579451273677,5,no clear difference
+S08_queue25,proposed-baseline,rtt_slope_abs_mean,14.750350642684685,9.46627856090637,-5.284072081778317,-6.603086156459165,-3.9650580070974684,-35.8233658967213,5,proposed better
+S08_queue25,proposed-baseline,goodput_mbps,9.532448064128257,9.429376,-0.10307206412825813,-0.16582338332534283,-0.040320744931173436,-1.0812759055685879,5,proposed worse
+S08_queue25,proposed-baseline,utilization_pct,98.74773547094189,97.67999999999999,-1.067735470941892,-1.7177836670442919,-0.4176872748394922,-1.0812759055685792,5,proposed worse
+S08_queue25,proposed-baseline,loss_rate_pct,0.20960779999999998,0.132501,-0.0771068,-0.08281697352421201,-0.071396626475788,-36.78622646676317,5,proposed better
+S08_queue25,proposed-baseline,drops_total,101.2,63.2,-38.0,-40.482929882215764,-35.517070117784236,-37.54940711462451,5,proposed better
+S08_queue25,proposed-baseline,drops_window,50.8,15.4,-35.4,-37.97435649434961,-32.82564350565039,-69.68503937007874,5,proposed better
+S08_queue25,proposed-baseline,retx_total,101.0,63.2,-37.8,-39.83993505778983,-35.760064942210164,-37.42574257425742,5,proposed better
+S08_queue25,proposed-baseline,retx_window,50.6,15.4,-35.2,-37.4208,-32.979200000000006,-69.56521739130436,5,proposed better
+S08_queue25,proposed-baseline,loss_events_window,36.8,14.0,-22.8,-24.418672246009056,-21.181327753990946,-61.95652173913044,5,proposed better
+S08_queue25,proposed-baseline,cwnd_mean_segs,28.940653604414372,29.13358996949724,0.19293636508287193,-0.22337484403043867,0.6092475741961825,0.6666620862130183,5,no clear difference
+S08_queue25,proposed-baseline,cwnd_max_segs,56.73867403314917,65.27900552486187,8.54033149171271,6.718896654617595,10.361766328807825,15.052046310992537,5,changed (neutral metric)
+S08_queue25,proposed-baseline,queue_mean_pkts,14.096926059999998,15.017918192000002,0.9209921320000006,0.23546685355300734,1.606517410446994,6.53328341285207,5,proposed worse
+S08_queue25,proposed-baseline,queue_p95_pkts,24.0,24.0,0.0,0.0,0.0,0.0,5,no clear difference
+S08_queue25,proposed-baseline,fairness_jain,0.977855885869689,0.8613951392786585,-0.11646074659103049,-0.2899547785950635,0.05703328541300255,-11.90980677970274,5,no clear difference
+S08_queue25,noslope-baseline,rtt_mean_ms,69.98225595931771,68.09805902513736,-1.8841969341803264,-2.5987240461333476,-1.1696698222273052,-2.692392390544902,5,noslope better
+S08_queue25,noslope-baseline,rtt_median_ms,71.36411050000001,69.4055826,-1.9585278999999958,-3.2535772974718236,-0.663478502528168,-2.7444157662414854,5,noslope better
+S08_queue25,noslope-baseline,rtt_p95_ms,81.86656312,81.39900303,-0.46756009000000065,-0.6402758126008901,-0.29484436739911124,-0.5711246108067968,5,noslope better
+S08_queue25,noslope-baseline,rtt_max_ms,95.5256376,118.97457460000001,23.448936999999997,20.930929676203355,25.96694432379664,24.547270857472924,5,noslope worse
+S08_queue25,noslope-baseline,qdelay_mean_ms,17.13207955268798,15.287388600321606,-1.8446909523663777,-2.571504304967074,-1.1178775997656816,-10.767466650462467,5,noslope better
+S08_queue25,noslope-baseline,qdelay_p95_ms,28.610239999999997,28.610239999999997,0.0,0.0,0.0,0.0,5,no clear difference
+S08_queue25,noslope-baseline,rtt_slope_abs_mean,14.750350642684685,15.749867392075085,0.9995167493903988,-2.548843189013491,4.547876687794289,6.776223654629532,5,no clear difference
+S08_queue25,noslope-baseline,goodput_mbps,9.532448064128257,9.335450420841685,-0.19699764328657388,-0.3530595415599216,-0.04093574501322614,-2.066600751048407,5,noslope worse
+S08_queue25,noslope-baseline,utilization_pct,98.74773547094189,96.70701402805612,-2.040721442885771,-3.6573847537284596,-0.42405813204308274,-2.066600751048399,5,noslope worse
+S08_queue25,noslope-baseline,loss_rate_pct,0.20960779999999998,0.17853599999999997,-0.0310718,-0.0354907234728527,-0.026652876527147294,-14.823780412751818,5,noslope better
+S08_queue25,noslope-baseline,drops_total,101.2,84.6,-16.6,-19.71605227170534,-13.483947728294664,-16.40316205533597,5,noslope better
+S08_queue25,noslope-baseline,drops_window,50.8,37.0,-13.8,-15.64139008360532,-11.958609916394682,-27.165354330708663,5,noslope better
+S08_queue25,noslope-baseline,retx_total,101.0,84.4,-16.6,-19.71605227170534,-13.483947728294664,-16.43564356435644,5,noslope better
+S08_queue25,noslope-baseline,retx_window,50.6,36.8,-13.8,-15.641390083605318,-11.958609916394684,-27.272727272727273,5,noslope better
+S08_queue25,noslope-baseline,loss_events_window,36.8,26.0,-10.8,-12.418672246009056,-9.181327753990946,-29.347826086956523,5,noslope better
+S08_queue25,noslope-baseline,cwnd_mean_segs,28.940653604414372,27.569101251203033,-1.3715523532113287,-2.0790633721196023,-0.6640413343030553,-4.739189280100168,5,changed (neutral metric)
+S08_queue25,noslope-baseline,cwnd_max_segs,56.73867403314917,64.88301104972375,8.14433701657459,4.93086676989571,11.357807263253472,14.354119399787736,5,changed (neutral metric)
+S08_queue25,noslope-baseline,queue_mean_pkts,14.096926059999998,12.322280179999998,-1.7746458800000007,-2.5270038673741686,-1.022287892625833,-12.588885494941733,5,noslope better
+S08_queue25,noslope-baseline,queue_p95_pkts,24.0,24.0,0.0,0.0,0.0,0.0,5,no clear difference
+S08_queue25,noslope-baseline,fairness_jain,0.977855885869689,0.960766304075856,-0.01708958179383313,-0.07023345441527554,0.03605429082760927,-1.7476585293173275,5,no clear difference
+S08_queue25,proposed-noslope,rtt_mean_ms,68.09805902513736,71.51608806562562,3.4180290404882556,2.478992302047148,4.357065778929363,5.019275276592747,5,proposed worse
+S08_queue25,proposed-noslope,rtt_median_ms,69.4055826,73.58134890000001,4.175766300000001,2.6617743428693297,5.689758257130673,6.0164703523431,5,proposed worse
+S08_queue25,proposed-noslope,rtt_p95_ms,81.39900303,82.53624998999999,1.1372469599999904,0.33628275446118194,1.9382111655387988,1.3971263991781968,5,proposed worse
+S08_queue25,proposed-noslope,rtt_max_ms,118.97457460000001,120.079824,1.1052493999999968,-26.540825104621337,28.751323904621334,0.9289794930689307,5,no clear difference
+S08_queue25,proposed-noslope,qdelay_mean_ms,15.287388600321606,18.446836760026677,3.159448159705073,2.0716203242643783,4.247275995145768,20.667023271970773,5,proposed worse
+S08_queue25,proposed-noslope,qdelay_p95_ms,28.610239999999997,28.562176,-0.048064000000000814,-0.1297701988480109,0.033642198848009244,-0.16799579451273677,5,no clear difference
+S08_queue25,proposed-noslope,rtt_slope_abs_mean,15.749867392075085,9.46627856090637,-6.283588831168716,-8.589841101405678,-3.9773365609317533,-39.89613801021875,5,proposed better
+S08_queue25,proposed-noslope,goodput_mbps,9.335450420841685,9.429376,0.09392557915831574,-0.09033104023796147,0.278182198554593,1.006117272591625,5,no clear difference
+S08_queue25,proposed-noslope,utilization_pct,96.70701402805612,97.67999999999999,0.9729859719438793,-0.9357497262219713,2.8817216701097297,1.0061172725916259,5,no clear difference
+S08_queue25,proposed-noslope,loss_rate_pct,0.17853599999999997,0.132501,-0.046035000000000006,-0.050224832994681494,-0.04184516700531852,-25.784715687592424,5,proposed better
+S08_queue25,proposed-noslope,drops_total,84.6,63.2,-21.4,-23.974356494349607,-18.82564350565039,-25.29550827423168,5,proposed better
+S08_queue25,proposed-noslope,drops_window,37.0,15.4,-21.6,-24.589843500921077,-18.610156499078926,-58.37837837837838,5,proposed better
+S08_queue25,proposed-noslope,retx_total,84.4,63.2,-21.2,-23.891431856837546,-18.508568143162453,-25.118483412322274,5,proposed better
+S08_queue25,proposed-noslope,retx_window,36.8,15.4,-21.4,-24.516052271705338,-18.28394772829466,-58.152173913043484,5,proposed better
+S08_queue25,proposed-noslope,loss_events_window,26.0,14.0,-12.0,-13.241464941107884,-10.758535058892116,-46.15384615384615,5,proposed better
+S08_queue25,proposed-noslope,cwnd_mean_segs,27.569101251203033,29.13358996949724,1.5644887182942007,0.855047815092267,2.2739296214961344,5.674790425842884,5,changed (neutral metric)
+S08_queue25,proposed-noslope,cwnd_max_segs,64.88301104972375,65.27900552486187,0.3959944751381187,-1.6703086688442466,2.4622976191204837,0.6103207430287788,5,no clear difference
+S08_queue25,proposed-noslope,queue_mean_pkts,12.322280179999998,15.017918192000002,2.695638012000001,1.7280891336922022,3.6631868903078004,21.876129844663225,5,proposed worse
+S08_queue25,proposed-noslope,queue_p95_pkts,24.0,24.0,0.0,0.0,0.0,0.0,5,no clear difference
+S08_queue25,proposed-noslope,fairness_jain,0.960766304075856,0.8613951392786585,-0.09937116479719736,-0.28983571163595656,0.09109338204156185,-10.342906945803092,5,no clear difference
+S09_queue400,proposed-baseline,rtt_mean_ms,476.9150243862256,208.658320669009,-268.2567037172166,-278.35395873343276,-258.1594487010005,-56.24832307651755,5,proposed better
+S09_queue400,proposed-baseline,rtt_median_ms,479.93925909999996,205.5745403,-274.3647188,-284.1162375047695,-264.61320009523047,-57.16655047442857,5,proposed better
+S09_queue400,proposed-baseline,rtt_p95_ms,526.57124625,240.75720164999998,-285.8140446,-306.37454306514445,-265.2535461348555,-54.2783235194548,5,proposed better
+S09_queue400,proposed-baseline,rtt_max_ms,558.6636169999999,302.7248636,-255.9387534,-287.90279935652535,-223.9747074434746,-45.81267610988886,5,proposed better
+S09_queue400,proposed-baseline,qdelay_mean_ms,424.0073504141968,155.77483216569593,-268.2325182485009,-278.0708081966908,-258.39422830031106,-63.261289689076065,5,proposed better
+S09_queue400,proposed-baseline,qdelay_p95_ms,473.65884800000003,183.172048,-290.4868,-303.8672555259835,-277.1063444740165,-61.328274817743925,5,proposed better
+S09_queue400,proposed-baseline,rtt_slope_abs_mean,6.910718147456346,8.809492068804776,1.8987739213484296,0.5480583181258911,3.249489524570968,27.475782991487193,5,proposed worse
+S09_queue400,proposed-baseline,goodput_mbps,9.628370084168338,9.640488016032066,0.012117931863727449,-0.021521446989979952,0.04575731071743485,0.12585652356313795,5,no clear difference
+S09_queue400,proposed-baseline,utilization_pct,99.74140280561124,99.86693386773548,0.12553106212424722,-0.22294316633266295,0.47400529058115737,0.12585652356313673,5,no clear difference
+S09_queue400,proposed-baseline,loss_rate_pct,0.46325000000000005,0.0,-0.46325000000000005,-0.4710402453788193,-0.4554597546211808,-100.0,5,proposed better
+S09_queue400,proposed-baseline,drops_total,228.4,0.0,-228.4,-232.8416,-223.9584,-100.0,5,proposed better
+S09_queue400,proposed-baseline,drops_window,0.4,0.0,-0.4,-1.5104000000000002,0.7104000000000003,-100.0,5,no clear difference
+S09_queue400,proposed-baseline,retx_total,228.4,0.0,-228.4,-232.8416,-223.9584,-100.0,5,proposed better
+S09_queue400,proposed-baseline,retx_window,0.4,0.0,-0.4,-1.5104000000000002,0.7104000000000003,-100.0,5,no clear difference
+S09_queue400,proposed-baseline,loss_events_window,0.2,0.0,-0.2,-0.7552000000000001,0.3552000000000001,-100.0,5,no clear difference
+S09_queue400,proposed-baseline,cwnd_mean_segs,198.81255359685636,86.6512798225649,-112.16127377429146,-116.36566245840487,-107.95688509017805,-56.41558933030321,5,changed (neutral metric)
+S09_queue400,proposed-baseline,cwnd_max_segs,380.89488950276245,188.64447513812155,-192.2504143646409,-197.10567444561002,-187.3951542836718,-50.47335095926683,5,changed (neutral metric)
+S09_queue400,proposed-baseline,queue_mean_pkts,353.439327084,129.451495884,-223.9878312,-232.26002198146537,-215.7156404185346,-63.37377140455171,5,proposed better
+S09_queue400,proposed-baseline,queue_p95_pkts,395.0,150.6,-244.4,-254.6223161054626,-234.1776838945374,-61.87341772151899,5,proposed better
+S09_queue400,proposed-baseline,fairness_jain,0.5986117517633696,0.6272634953441412,0.02865174358077156,0.012968726716929013,0.04433476044461411,4.786365034827709,5,proposed better
+S09_queue400,noslope-baseline,rtt_mean_ms,476.9150243862256,208.8775763745413,-268.0374480116842,-277.5270281313236,-258.5478678920448,-56.20234932976579,5,noslope better
+S09_queue400,noslope-baseline,rtt_median_ms,479.93925909999996,206.06947129999998,-273.8697878,-282.25281192434437,-265.4867636756556,-57.06342679979355,5,noslope better
+S09_queue400,noslope-baseline,rtt_p95_ms,526.57124625,240.76513093,-285.80611532,-306.3486198504549,-265.2636107895451,-54.27681768713744,5,noslope better
+S09_queue400,noslope-baseline,rtt_max_ms,558.6636169999999,302.7248636,-255.9387534,-287.90279935652535,-223.9747074434746,-45.81267610988886,5,noslope better
+S09_queue400,noslope-baseline,qdelay_mean_ms,424.0073504141968,155.9931623456964,-268.01418806850046,-277.24854087156587,-258.77983526543505,-63.209797614755374,5,noslope better
+S09_queue400,noslope-baseline,qdelay_p95_ms,473.65884800000003,183.172048,-290.4868,-303.8672555259835,-277.1063444740165,-61.328274817743925,5,noslope better
+S09_queue400,noslope-baseline,rtt_slope_abs_mean,6.910718147456346,8.910909544413286,2.0001913969569394,0.7374271474020608,3.262955646511818,28.943321870146843,5,noslope worse
+S09_queue400,noslope-baseline,goodput_mbps,9.628370084168338,9.640488016032066,0.012117931863727449,-0.021521446989979952,0.04575731071743485,0.12585652356313795,5,no clear difference
+S09_queue400,noslope-baseline,utilization_pct,99.74140280561124,99.86693386773548,0.12553106212424722,-0.22294316633266295,0.47400529058115737,0.12585652356313673,5,no clear difference
+S09_queue400,noslope-baseline,loss_rate_pct,0.46325000000000005,0.0,-0.46325000000000005,-0.4710402453788193,-0.4554597546211808,-100.0,5,noslope better
+S09_queue400,noslope-baseline,drops_total,228.4,0.0,-228.4,-232.8416,-223.9584,-100.0,5,noslope better
+S09_queue400,noslope-baseline,drops_window,0.4,0.0,-0.4,-1.5104000000000002,0.7104000000000003,-100.0,5,no clear difference
+S09_queue400,noslope-baseline,retx_total,228.4,0.0,-228.4,-232.8416,-223.9584,-100.0,5,noslope better
+S09_queue400,noslope-baseline,retx_window,0.4,0.0,-0.4,-1.5104000000000002,0.7104000000000003,-100.0,5,no clear difference
+S09_queue400,noslope-baseline,loss_events_window,0.2,0.0,-0.2,-0.7552000000000001,0.3552000000000001,-100.0,5,no clear difference
+S09_queue400,noslope-baseline,cwnd_mean_segs,198.81255359685636,86.73441484670165,-112.0781387501547,-116.05225832862855,-108.10401917168083,-56.37377354823477,5,changed (neutral metric)
+S09_queue400,noslope-baseline,cwnd_max_segs,380.89488950276245,188.70290055248617,-192.19198895027625,-196.89938038693288,-187.48459751361963,-50.45801197311217,5,changed (neutral metric)
+S09_queue400,noslope-baseline,queue_mean_pkts,353.439327084,129.61672878,-223.822598304,-231.63694737308302,-216.00824923491697,-63.32702140155594,5,noslope better
+S09_queue400,noslope-baseline,queue_p95_pkts,395.0,150.6,-244.4,-254.6223161054626,-234.1776838945374,-61.87341772151899,5,noslope better
+S09_queue400,noslope-baseline,fairness_jain,0.5986117517633696,0.6272168098137358,0.028605058050366238,0.012802145227705435,0.044407970873027044,4.778566068257508,5,noslope better
+S09_queue400,proposed-noslope,rtt_mean_ms,208.8775763745413,208.658320669009,-0.21925570553231638,-0.8279095440900266,0.3893981330253939,-0.10496852239379009,5,no clear difference
+S09_queue400,proposed-noslope,rtt_median_ms,206.06947129999998,205.5745403,-0.49493100000000256,-1.8688594560000094,0.8789974560000043,-0.24017676993962503,5,no clear difference
+S09_queue400,proposed-noslope,rtt_p95_ms,240.76513093,240.75720164999998,-0.007929279999996198,-0.02994096127998564,0.014082401279993245,-0.0032933672618488743,5,no clear difference
+S09_queue400,proposed-noslope,rtt_max_ms,302.7248636,302.7248636,0.0,0.0,0.0,0.0,5,no clear difference
+S09_queue400,proposed-noslope,qdelay_mean_ms,155.9931623456964,155.77483216569593,-0.21833018000048127,-0.8244147596818172,0.3877543996808546,-0.13996137825364413,5,no clear difference
+S09_queue400,proposed-noslope,qdelay_p95_ms,183.172048,183.172048,0.0,0.0,0.0,0.0,5,no clear difference
+S09_queue400,proposed-noslope,rtt_slope_abs_mean,8.910909544413286,8.809492068804776,-0.10141747560850937,-0.3829523878977314,0.18011743668071262,-1.13812709132586,5,no clear difference
+S09_queue400,proposed-noslope,goodput_mbps,9.640488016032066,9.640488016032066,0.0,0.0,0.0,0.0,5,no clear difference
+S09_queue400,proposed-noslope,utilization_pct,99.86693386773548,99.86693386773548,0.0,0.0,0.0,0.0,5,no clear difference
+S09_queue400,proposed-noslope,loss_rate_pct,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S09_queue400,proposed-noslope,drops_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S09_queue400,proposed-noslope,drops_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S09_queue400,proposed-noslope,retx_total,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S09_queue400,proposed-noslope,retx_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S09_queue400,proposed-noslope,loss_events_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S09_queue400,proposed-noslope,cwnd_mean_segs,86.73441484670165,86.6512798225649,-0.08313502413673746,-0.3139178511403206,0.1476478028668457,-0.09585010088979568,5,no clear difference
+S09_queue400,proposed-noslope,cwnd_max_segs,188.70290055248617,188.64447513812155,-0.058425414364643304,-0.22061436464089307,0.10376353591160647,-0.030961587868328897,5,no clear difference
+S09_queue400,proposed-noslope,queue_mean_pkts,129.61672878,129.451495884,-0.16523289600000055,-0.623919415296002,0.293453623296001,-0.127478063638261,5,no clear difference
+S09_queue400,proposed-noslope,queue_p95_pkts,150.6,150.6,0.0,0.0,0.0,0.0,5,no clear difference
+S09_queue400,proposed-noslope,fairness_jain,0.6272168098137358,0.6272634953441412,4.668553040532153e-05,-8.2913501999851e-05,0.00017628456281049406,0.007443284311717618,5,no clear difference
+S10_delay5,proposed-baseline,rtt_mean_ms,119.54342068614133,91.03382232547342,-28.509598360667884,-36.97670924798885,-20.04248747334692,-23.8487389745348,5,proposed better
+S10_delay5,proposed-baseline,rtt_median_ms,122.6889247,92.1196048,-30.569319899999993,-40.033720281800434,-21.10491951819955,-24.91612015896981,5,proposed better
+S10_delay5,proposed-baseline,rtt_p95_ms,140.8293961,101.49747,-39.3319261,-50.00716255125366,-28.656689648746337,-27.92877565992772,5,proposed better
+S10_delay5,proposed-baseline,rtt_max_ms,157.74174299999999,119.4631128,-38.278630199999995,-54.353663581696864,-22.203596818303126,-24.266645893471583,5,proposed better
+S10_delay5,proposed-baseline,qdelay_mean_ms,96.72262228938443,69.0796302024457,-27.642992086938744,-36.031946412533586,-19.254037761343902,-28.57965534085053,5,proposed better
+S10_delay5,proposed-baseline,qdelay_p95_ms,118.57008,80.38323199999999,-38.186848000000005,-48.59084194992645,-27.78285405007356,-32.206141718045565,5,proposed better
+S10_delay5,proposed-baseline,rtt_slope_abs_mean,14.614944099043422,5.168526766542086,-9.446417332501335,-11.951353572400507,-6.941481092602163,-64.63532989578539,5,proposed better
+S10_delay5,proposed-baseline,goodput_mbps,9.642298741482968,9.640441587174351,-0.001857154308617126,-0.0070126146693382675,0.003298306052104015,-0.019260493357536226,5,no clear difference
+S10_delay5,proposed-baseline,utilization_pct,99.88569138276554,99.86645290581164,-0.019238476953910323,-0.07264448897796538,0.03416753507014473,-0.019260493357539862,5,no clear difference
+S10_delay5,proposed-baseline,loss_rate_pct,0.1901882,0.11158760000000001,-0.07860059999999999,-0.08712150089373047,-0.07007969910626952,-41.32780056806889,5,proposed better
+S10_delay5,proposed-baseline,drops_total,93.2,54.6,-38.6,-42.86457211921665,-34.33542788078335,-41.41630901287554,5,proposed better
+S10_delay5,proposed-baseline,drops_window,17.2,0.0,-17.2,-19.4208,-14.979199999999999,-100.0,5,proposed better
+S10_delay5,proposed-baseline,retx_total,93.2,54.6,-38.6,-42.86457211921665,-34.33542788078335,-41.41630901287554,5,proposed better
+S10_delay5,proposed-baseline,retx_window,17.4,0.0,-17.4,-19.655233061126943,-15.144766938873056,-100.0,5,proposed better
+S10_delay5,proposed-baseline,loss_events_window,12.2,0.0,-12.2,-12.755199999999999,-11.6448,-100.0,5,proposed better
+S10_delay5,proposed-baseline,cwnd_mean_segs,49.91301715372789,37.920712542827346,-11.992304610900554,-15.500404586858881,-8.484204634942227,-24.026406927005162,5,changed (neutral metric)
+S10_delay5,proposed-baseline,cwnd_max_segs,95.39309392265193,83.12472375690608,-12.26837016574585,-23.63832865092983,-0.8984116805618712,-12.860857805590703,5,changed (neutral metric)
+S10_delay5,proposed-baseline,queue_mean_pkts,80.53444084399999,57.504611736,-23.029829107999998,-30.023590887102593,-16.036067328897403,-28.596248842914488,5,proposed better
+S10_delay5,proposed-baseline,queue_p95_pkts,98.4,67.0,-31.4,-40.33509839677213,-22.464901603227865,-31.910569105691057,5,proposed better
+S10_delay5,proposed-baseline,fairness_jain,0.9621028032911884,0.5573015153546299,-0.4048012879365583,-0.43398897515976037,-0.3756136007133562,-42.07463969045747,5,proposed worse
+S10_delay5,noslope-baseline,rtt_mean_ms,119.54342068614133,89.99305159422946,-29.550369091911847,-38.25594453442189,-20.8447936494018,-24.719360481992315,5,noslope better
+S10_delay5,noslope-baseline,rtt_median_ms,122.6889247,90.5350287,-32.153895999999996,-41.02905770128243,-23.27873429871756,-26.20765980191201,5,noslope better
+S10_delay5,noslope-baseline,rtt_p95_ms,140.8293961,103.2920151,-37.537380999999996,-48.56265097262777,-26.51211102737222,-26.65450682849303,5,noslope better
+S10_delay5,noslope-baseline,rtt_max_ms,157.74174299999999,134.64048340000002,-23.101259599999995,-39.313564498569384,-6.888954701430606,-14.644988169047933,5,noslope better
+S10_delay5,noslope-baseline,qdelay_mean_ms,96.72262228938443,67.9710750578353,-28.75154723154916,-37.34274848668585,-20.16034597641247,-29.72577309321433,5,noslope better
+S10_delay5,noslope-baseline,qdelay_p95_ms,118.57008,81.128224,-37.44185600000001,-48.82446109585383,-26.05925090414619,-31.577828065899936,5,noslope better
+S10_delay5,noslope-baseline,rtt_slope_abs_mean,14.614944099043422,8.878223325741473,-5.736720773301948,-8.039237494447054,-3.4342040521568413,-39.25243048775964,5,noslope better
+S10_delay5,noslope-baseline,goodput_mbps,9.642298741482968,9.640441587174351,-0.001857154308617126,-0.0070126146693382675,0.003298306052104015,-0.019260493357536226,5,no clear difference
+S10_delay5,noslope-baseline,utilization_pct,99.88569138276554,99.86645290581164,-0.019238476953910323,-0.07264448897796538,0.03416753507014473,-0.019260493357539862,5,no clear difference
+S10_delay5,noslope-baseline,loss_rate_pct,0.1901882,0.1115924,-0.0785958,-0.08710622310994327,-0.07008537689005671,-41.32527675218547,5,noslope better
+S10_delay5,noslope-baseline,drops_total,93.2,54.6,-38.6,-42.86457211921665,-34.33542788078335,-41.41630901287554,5,noslope better
+S10_delay5,noslope-baseline,drops_window,17.2,0.0,-17.2,-19.4208,-14.979199999999999,-100.0,5,noslope better
+S10_delay5,noslope-baseline,retx_total,93.2,54.6,-38.6,-42.86457211921665,-34.33542788078335,-41.41630901287554,5,noslope better
+S10_delay5,noslope-baseline,retx_window,17.4,0.0,-17.4,-19.655233061126943,-15.144766938873056,-100.0,5,noslope better
+S10_delay5,noslope-baseline,loss_events_window,12.2,0.0,-12.2,-12.755199999999999,-11.6448,-100.0,5,noslope better
+S10_delay5,noslope-baseline,cwnd_mean_segs,49.91301715372789,37.45778796688121,-12.455229186846687,-16.046360298304094,-8.86409807538928,-24.953869545665068,5,changed (neutral metric)
+S10_delay5,noslope-baseline,cwnd_max_segs,95.39309392265193,83.21878453038676,-12.174309392265183,-23.706861359559657,-0.6417574249707094,-12.762254469004372,5,changed (neutral metric)
+S10_delay5,noslope-baseline,queue_mean_pkts,80.53444084399999,56.57306168,-23.961379164,-31.11935519436316,-16.80340313363684,-29.752958998516696,5,noslope better
+S10_delay5,noslope-baseline,queue_p95_pkts,98.4,67.2,-31.2,-40.212385646431244,-22.18761435356875,-31.70731707317073,5,noslope better
+S10_delay5,noslope-baseline,fairness_jain,0.9621028032911884,0.5581837799456585,-0.4039190233455298,-0.43339003760729206,-0.3744480090837676,-41.98293799413038,5,noslope worse
+S10_delay5,proposed-noslope,rtt_mean_ms,89.99305159422946,91.03382232547342,1.0407707312439611,0.5783921685077911,1.5031492939801312,1.1565012107120252,5,proposed worse
+S10_delay5,proposed-noslope,rtt_median_ms,90.5350287,92.1196048,1.584576100000001,0.06898240568696923,3.1001697943130324,1.7502353760230278,5,proposed worse
+S10_delay5,proposed-noslope,rtt_p95_ms,103.2920151,101.49747,-1.7945451000000048,-3.0205989525602432,-0.5684912474397663,-1.7373512350036482,5,proposed better
+S10_delay5,proposed-noslope,rtt_max_ms,134.64048340000002,119.4631128,-15.177370600000003,-17.244092568824463,-13.110648631175545,-11.272516420570131,5,proposed better
+S10_delay5,proposed-noslope,qdelay_mean_ms,67.9710750578353,69.0796302024457,1.1085551446104147,0.6870695812292031,1.5300407079916263,1.630921893860243,5,proposed worse
+S10_delay5,proposed-noslope,qdelay_p95_ms,81.128224,80.38323199999999,-0.7449919999999992,-1.9723993330587055,0.4824153330587071,-0.9182895461880185,5,no clear difference
+S10_delay5,proposed-noslope,rtt_slope_abs_mean,8.878223325741473,5.168526766542086,-3.7096965591993856,-4.271002464942926,-3.148390653455845,-41.78422217025687,5,proposed better
+S10_delay5,proposed-noslope,goodput_mbps,9.640441587174351,9.640441587174351,0.0,0.0,0.0,0.0,5,no clear difference
+S10_delay5,proposed-noslope,utilization_pct,99.86645290581164,99.86645290581164,0.0,0.0,0.0,0.0,5,no clear difference
+S10_delay5,proposed-noslope,loss_rate_pct,0.1115924,0.11158760000000001,-4.800000000002025e-06,-4.455014876752511e-05,3.495014876752106e-05,-0.004301368193534708,5,no clear difference
+S10_delay5,proposed-noslope,drops_total,54.6,54.6,0.0,0.0,0.0,0.0,5,no clear difference
+S10_delay5,proposed-noslope,drops_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S10_delay5,proposed-noslope,retx_total,54.6,54.6,0.0,0.0,0.0,0.0,5,no clear difference
+S10_delay5,proposed-noslope,retx_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S10_delay5,proposed-noslope,loss_events_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S10_delay5,proposed-noslope,cwnd_mean_segs,37.45778796688121,37.920712542827346,0.4629245759461327,0.27276349220469825,0.6530856596875672,1.2358566831427242,5,changed (neutral metric)
+S10_delay5,proposed-noslope,cwnd_max_segs,83.21878453038676,83.12472375690608,-0.09406077348066617,-0.26170737008081196,0.0735858231194796,-0.11302829524783618,5,no clear difference
+S10_delay5,proposed-noslope,queue_mean_pkts,56.57306168,57.504611736,0.9315500560000004,0.5725694916825473,1.2905306203174534,1.6466318568176888,5,proposed worse
+S10_delay5,proposed-noslope,queue_p95_pkts,67.2,67.0,-0.2,-1.238684090568446,0.8386840905684461,-0.2976190476190476,5,no clear difference
+S10_delay5,proposed-noslope,fairness_jain,0.5581837799456585,0.5573015153546299,-0.0008822645910285143,-0.0012731281651685157,-0.000491401016888513,-0.15805987610646915,5,proposed worse
+S11_delay50,proposed-baseline,rtt_mean_ms,191.48610761118158,148.75091184809767,-42.735195763083894,-58.627129238453314,-26.843262287714474,-22.317648155373767,5,proposed better
+S11_delay50,proposed-baseline,rtt_median_ms,194.299829,148.0611852,-46.2386438,-61.10065124223446,-31.376636357765534,-23.79757307969633,5,proposed better
+S11_delay50,proposed-baseline,rtt_p95_ms,229.51597534,162.01361043,-67.50236491000001,-79.1540621513261,-55.85066766867392,-29.410747905457765,5,proposed better
+S11_delay50,proposed-baseline,rtt_max_ms,250.9195588,280.30829600000004,29.38873719999999,-46.390156215832874,105.16763061583286,11.712413867037291,5,no clear difference
+S11_delay50,proposed-baseline,qdelay_mean_ms,78.75740199926803,35.70495451547758,-43.05244748379044,-59.23566559128525,-26.86922937629563,-54.664636454349484,5,proposed better
+S11_delay50,proposed-baseline,qdelay_p95_ms,117.12799999999997,49.790336,-67.337664,-79.69332354964024,-54.98200445035977,-57.49066320606518,5,proposed better
+S11_delay50,proposed-baseline,rtt_slope_abs_mean,10.650155616986192,5.659201140363213,-4.990954476622979,-8.700632098500625,-1.2812768547453324,-46.86273756096845,5,proposed better
+S11_delay50,proposed-baseline,goodput_mbps,9.640488016032066,9.640488016032066,0.0,0.0,0.0,0.0,5,no clear difference
+S11_delay50,proposed-baseline,utilization_pct,99.86693386773548,99.86693386773548,0.0,0.0,0.0,0.0,5,no clear difference
+S11_delay50,proposed-baseline,loss_rate_pct,0.24300740000000004,0.23280620000000002,-0.010201200000000004,-0.017610210056009185,-0.0027921899439908226,-4.197896854169874,5,proposed better
+S11_delay50,proposed-baseline,drops_total,118.0,113.0,-5.0,-8.72439482332365,-1.2756051766763505,-4.237288135593221,5,proposed better
+S11_delay50,proposed-baseline,drops_window,5.8,0.0,-5.8,-6.3552,-5.2448,-100.0,5,proposed better
+S11_delay50,proposed-baseline,retx_total,118.4,113.8,-4.6,-7.716052271705338,-1.4839477282946616,-3.8851351351351346,5,proposed better
+S11_delay50,proposed-baseline,retx_window,5.8,0.0,-5.8,-6.3552,-5.2448,-100.0,5,proposed better
+S11_delay50,proposed-baseline,loss_events_window,4.8,0.0,-4.8,-6.1599567051932205,-3.4400432948067796,-100.0,5,proposed better
+S11_delay50,proposed-baseline,cwnd_mean_segs,79.85186958418232,61.74116891800414,-18.110700666178182,-24.81180729849244,-11.409594033863923,-22.680371493475576,5,changed (neutral metric)
+S11_delay50,proposed-baseline,cwnd_max_segs,144.0664364640884,134.71091160220993,-9.355524861878454,-52.988597595624384,34.27754787186748,-6.493896213092294,5,no clear difference
+S11_delay50,proposed-baseline,queue_mean_pkts,65.52927696399999,29.721946287999998,-35.807330676,-49.27765798080896,-22.337003371191038,-54.6432561672725,5,proposed better
+S11_delay50,proposed-baseline,queue_p95_pkts,97.6,41.6,-56.0,-66.23738216537802,-45.76261783462198,-57.37704918032787,5,proposed better
+S11_delay50,proposed-baseline,fairness_jain,0.9831005713462757,0.5772910840833594,-0.4058094872629162,-0.4912708927044147,-0.3203480818214177,-41.278532338476154,5,proposed worse
+S11_delay50,noslope-baseline,rtt_mean_ms,191.48610761118158,147.7691419614736,-43.716965649708,-59.30831694616314,-28.125614353252864,-22.830358920071966,5,noslope better
+S11_delay50,noslope-baseline,rtt_median_ms,194.299829,146.96977339999998,-47.3300556,-61.67311302806319,-32.98699817193681,-24.359288345024744,5,noslope better
+S11_delay50,noslope-baseline,rtt_p95_ms,229.51597534,163.26552738,-66.25044796000002,-77.91179508584497,-54.58910083415506,-28.86528829283366,5,noslope better
+S11_delay50,noslope-baseline,rtt_max_ms,250.9195588,279.037325,28.117766199999988,-45.80929365843323,102.04482605843322,11.20588858615512,5,no clear difference
+S11_delay50,noslope-baseline,qdelay_mean_ms,78.75740199926803,34.75584363418402,-44.001558365083994,-60.06828220571359,-27.934834524454406,-55.869743348686065,5,noslope better
+S11_delay50,noslope-baseline,qdelay_p95_ms,117.12799999999997,50.751616,-66.376384,-78.38311849258818,-54.36964950741182,-56.669954238098505,5,noslope better
+S11_delay50,noslope-baseline,rtt_slope_abs_mean,10.650155616986192,8.296642107236183,-2.3535135097500093,-6.63205027180566,1.9250232523056412,-22.098395501342097,5,no clear difference
+S11_delay50,noslope-baseline,goodput_mbps,9.640488016032066,9.640488016032066,0.0,0.0,0.0,0.0,5,no clear difference
+S11_delay50,noslope-baseline,utilization_pct,99.86693386773548,99.86693386773548,0.0,0.0,0.0,0.0,5,no clear difference
+S11_delay50,noslope-baseline,loss_rate_pct,0.24300740000000004,0.23284739999999998,-0.010160000000000008,-0.017521732805786623,-0.002798267194213392,-4.180942637960821,5,noslope better
+S11_delay50,noslope-baseline,drops_total,118.0,113.0,-5.0,-8.72439482332365,-1.2756051766763505,-4.237288135593221,5,noslope better
+S11_delay50,noslope-baseline,drops_window,5.8,0.0,-5.8,-6.3552,-5.2448,-100.0,5,noslope better
+S11_delay50,noslope-baseline,retx_total,118.4,113.8,-4.6,-7.716052271705338,-1.4839477282946616,-3.8851351351351346,5,noslope better
+S11_delay50,noslope-baseline,retx_window,5.8,0.0,-5.8,-6.3552,-5.2448,-100.0,5,noslope better
+S11_delay50,noslope-baseline,loss_events_window,4.8,0.0,-4.8,-6.1599567051932205,-3.4400432948067796,-100.0,5,noslope better
+S11_delay50,noslope-baseline,cwnd_mean_segs,79.85186958418232,61.3428293721837,-18.50904021199862,-25.12605535561066,-11.892025068386578,-23.179219607984024,5,changed (neutral metric)
+S11_delay50,noslope-baseline,cwnd_max_segs,144.0664364640884,134.7529005524862,-9.313535911602212,-53.07749155424163,34.4504197310372,-6.464750666560567,5,no clear difference
+S11_delay50,noslope-baseline,queue_mean_pkts,65.52927696399999,28.923658864000004,-36.605618099999994,-49.99046274221005,-23.22077345778994,-55.86147107972842,5,noslope better
+S11_delay50,noslope-baseline,queue_p95_pkts,97.6,42.4,-55.2,-65.14722573585219,-45.25277426414782,-56.55737704918033,5,noslope better
+S11_delay50,noslope-baseline,fairness_jain,0.9831005713462757,0.5596610946038515,-0.42343947674242416,-0.4888846819306751,-0.35799427155417324,-43.07183711251011,5,noslope worse
+S11_delay50,proposed-noslope,rtt_mean_ms,147.7691419614736,148.75091184809767,0.9817698866241074,0.1329491825608936,1.8305905906873212,0.6643943881599276,5,proposed worse
+S11_delay50,proposed-noslope,rtt_median_ms,146.96977339999998,148.0611852,1.091411800000003,-1.1128295182896006,3.2956531182896067,0.7426097045339822,5,no clear difference
+S11_delay50,proposed-noslope,rtt_p95_ms,163.26552738,162.01361043,-1.2519169500000031,-2.2452031833016197,-0.25863071669838655,-0.7667980927083096,5,proposed better
+S11_delay50,proposed-noslope,rtt_max_ms,279.037325,280.30829600000004,1.270971000000003,-13.955271054002223,16.49721305400223,0.4554842259901979,5,no clear difference
+S11_delay50,proposed-noslope,qdelay_mean_ms,34.75584363418402,35.70495451547758,0.9491108812935642,-0.011597926310339957,1.9098196888974686,2.730795118320963,5,no clear difference
+S11_delay50,proposed-noslope,qdelay_p95_ms,50.751616,49.790336,-0.9612799999999992,-1.6284083199999988,-0.2941516799999998,-1.8940874710275222,5,proposed better
+S11_delay50,proposed-noslope,rtt_slope_abs_mean,8.296642107236183,5.659201140363213,-2.637440966872969,-3.899212192425809,-1.3756697413201293,-31.789258024913963,5,proposed better
+S11_delay50,proposed-noslope,goodput_mbps,9.640488016032066,9.640488016032066,0.0,0.0,0.0,0.0,5,no clear difference
+S11_delay50,proposed-noslope,utilization_pct,99.86693386773548,99.86693386773548,0.0,0.0,0.0,0.0,5,no clear difference
+S11_delay50,proposed-noslope,loss_rate_pct,0.23284739999999998,0.23280620000000002,-4.119999999999679e-05,-0.00011905875858656334,3.665875858656976e-05,-0.017693991859044505,5,no clear difference
+S11_delay50,proposed-noslope,drops_total,113.0,113.0,0.0,0.0,0.0,0.0,5,no clear difference
+S11_delay50,proposed-noslope,drops_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S11_delay50,proposed-noslope,retx_total,113.8,113.8,0.0,0.0,0.0,0.0,5,no clear difference
+S11_delay50,proposed-noslope,retx_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S11_delay50,proposed-noslope,loss_events_window,0.0,0.0,0.0,0.0,0.0,,5,no clear difference
+S11_delay50,proposed-noslope,cwnd_mean_segs,61.3428293721837,61.74116891800414,0.39833954582043984,0.026555614662972515,0.7701234769779072,0.6493661115688112,5,changed (neutral metric)
+S11_delay50,proposed-noslope,cwnd_max_segs,134.7529005524862,134.71091160220993,-0.04198895027624019,-0.25372120651188146,0.16974330595940107,-0.031159960271048493,5,no clear difference
+S11_delay50,proposed-noslope,queue_mean_pkts,28.923658864000004,29.721946287999998,0.7982874239999994,-0.0050060681887783565,1.601580916188777,2.7599807747476666,5,no clear difference
+S11_delay50,proposed-noslope,queue_p95_pkts,42.4,41.6,-0.8,-1.3552,-0.24480000000000013,-1.8867924528301887,5,proposed better
+S11_delay50,proposed-noslope,fairness_jain,0.5596610946038515,0.5772910840833594,0.017629989479507936,-0.003519444186816531,0.0387794231458324,3.1501188218178866,5,no clear difference
